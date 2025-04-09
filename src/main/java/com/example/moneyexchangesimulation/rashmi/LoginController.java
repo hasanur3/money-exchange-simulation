@@ -5,6 +5,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
+import java.io.IOException;
+
 public class LoginController
 {
     @javafx.fxml.FXML
@@ -20,6 +22,8 @@ public class LoginController
     }
 
     @javafx.fxml.FXML
-    public void loginButton(ActionEvent actionEvent) {
+    public void loginButton(ActionEvent actionEvent) throws IOException {
+
+
     }
 }
