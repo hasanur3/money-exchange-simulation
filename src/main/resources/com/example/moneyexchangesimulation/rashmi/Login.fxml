@@ -7,16 +7,25 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.rashmi.LoginController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #90C67C;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.rashmi.Controller.LoginController">
    <children>
       <TextField fx:id="userNameTextField" layoutX="142.0" layoutY="49.0" prefHeight="26.0" prefWidth="296.0" promptText="User Name" />
       <PasswordField fx:id="passwordField" layoutX="143.0" layoutY="102.0" prefHeight="26.0" prefWidth="296.0" promptText="Password" />
-      <Button layoutX="232.0" layoutY="186.0" mnemonicParsing="false" onAction="#loginButton" prefHeight="26.0" prefWidth="114.0" text="Login" textAlignment="CENTER">
+      <Button layoutX="200.0" layoutY="219.0" mnemonicParsing="false" onAction="#loginButton" prefHeight="58.0" prefWidth="158.0" text="Login" textAlignment="CENTER">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Label fx:id="messageLabel" layoutX="143.0" layoutY="292.0" prefHeight="56.0" prefWidth="331.0" />
+      <Label fx:id="messageLabel" layoutX="276.0" layoutY="346.0" prefHeight="40.0" prefWidth="312.0" />
+      <Button layoutX="346.0" layoutY="135.0" mnemonicParsing="false" onAction="#createAccountButton" prefHeight="18.0" prefWidth="114.0" text="Create Account" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="143.0" layoutY="141.0" text="Do you have a account?" textFill="#5b5858">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

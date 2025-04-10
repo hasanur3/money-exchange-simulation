@@ -1,4 +1,4 @@
-package com.example.moneyexchangesimulation.rashmi;
+package com.example.moneyexchangesimulation.rashmi.ModelClass;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

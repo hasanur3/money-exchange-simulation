@@ -1,4 +1,4 @@
-package com.example.moneyexchangesimulation.rashmi;
+package com.example.moneyexchangesimulation.rashmi.Controller;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
@@ -25,5 +25,9 @@ public class LoginController
     public void loginButton(ActionEvent actionEvent) throws IOException {
 
 
+    }
+
+    @javafx.fxml.FXML
+    public void createAccountButton(ActionEvent actionEvent) {
     }
 }
