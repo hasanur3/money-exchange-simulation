@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #90C67C;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.rashmi.Controller.LoginController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #90C67C;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.LoginController">
    <children>
-      <TextField fx:id="userNameTextField" layoutX="142.0" layoutY="49.0" prefHeight="26.0" prefWidth="296.0" promptText="User Name" />
+      <TextField fx:id="idTextField" layoutX="142.0" layoutY="49.0" prefHeight="26.0" prefWidth="296.0" promptText="ID" />
       <PasswordField fx:id="passwordField" layoutX="143.0" layoutY="102.0" prefHeight="26.0" prefWidth="296.0" promptText="Password" />
       <Button layoutX="200.0" layoutY="219.0" mnemonicParsing="false" onAction="#loginButton" prefHeight="58.0" prefWidth="158.0" text="Login" textAlignment="CENTER">
          <font>
