@@ -1,16 +1,19 @@
-package com.example.moneyexchangesimulation.rashmi.Controller;
+package com.example.moneyexchangesimulation;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-import java.io.IOException;
-
-public class LoginController
+public class SignUpController
 {
     @javafx.fxml.FXML
-    private TextField userNameTextField;
+    private ComboBox userTypeComboBox;
+    @javafx.fxml.FXML
+    private TextField emailTextField;
+    @javafx.fxml.FXML
+    private TextField nameTextField;
     @javafx.fxml.FXML
     private PasswordField passwordField;
     @javafx.fxml.FXML
@@ -18,16 +21,9 @@ public class LoginController
 
     @javafx.fxml.FXML
     public void initialize() {
-
     }
 
     @javafx.fxml.FXML
-    public void loginButton(ActionEvent actionEvent) throws IOException {
-
-
-    }
-
-    @javafx.fxml.FXML
-    public void createAccountButton(ActionEvent actionEvent) {
+    public void signUpButton(ActionEvent actionEvent) {
     }
 }
