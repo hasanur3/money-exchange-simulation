@@ -2,6 +2,8 @@ package com.example.moneyexchangesimulation.Hasan;
 
 import javafx.event.ActionEvent;
 
+import java.io.IOException;
+
 public class Cashier_dashboardController
 {
     @javafx.fxml.FXML
@@ -9,7 +11,8 @@ public class Cashier_dashboardController
     }
 
     @javafx.fxml.FXML
-    public void verifyId(ActionEvent actionEvent) {
+    public void verifyId(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("cashier_Goal1");
     }
 
     @javafx.fxml.FXML
