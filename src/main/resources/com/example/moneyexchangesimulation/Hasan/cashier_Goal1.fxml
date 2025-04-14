@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="validationLabel" prefHeight="502.0" prefWidth="910.0" style="-fx-background-color: #DDEB9D;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Hasan.CashierGoal1Controller">
+<AnchorPane prefHeight="502.0" prefWidth="910.0" style="-fx-background-color: #DDEB9D;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Hasan.CashierGoal1Controller">
    <children>
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="289.0" layoutY="14.0" prefHeight="35.0" prefWidth="351.0" style="-fx-background-color: #143D60;" text="Customer Exchange Request" textFill="#fcf5f5">
          <font>
@@ -60,7 +60,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Label layoutX="544.0" layoutY="186.0" prefHeight="40.0" prefWidth="385.0" text="Cash Availability:">
+      <Label fx:id="validationLabel" layoutX="544.0" layoutY="186.0" prefHeight="40.0" prefWidth="385.0" text="Cash Availability:">
          <font>
             <Font size="18.0" />
          </font>
@@ -71,6 +71,11 @@
          </font>
       </Label>
       <Label fx:id="receiptStatusLabel" layoutX="544.0" layoutY="305.0" prefHeight="40.0" prefWidth="385.0" text="Receipt Status: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="confirmationLabel" layoutX="253.0" layoutY="374.0" prefHeight="95.0" prefWidth="386.0" text="Confirmation Label:">
          <font>
             <Font size="18.0" />
          </font>
