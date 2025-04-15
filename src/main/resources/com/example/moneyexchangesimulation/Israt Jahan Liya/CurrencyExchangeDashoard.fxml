@@ -11,8 +11,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="613.0" prefWidth="926.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Israt Jahan Liya.CurrencyExchangeDashoardController">
+<AnchorPane prefHeight="613.0" prefWidth="926.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Israt_Jahan_Liya.CurrencyExchangeDashoardController.java">
    <children>
       <Label layoutX="288.0" layoutY="47.0" prefHeight="26.0" prefWidth="253.0" text="Currency Exchange Dashboard" textOverrun="CLIP">
          <font>

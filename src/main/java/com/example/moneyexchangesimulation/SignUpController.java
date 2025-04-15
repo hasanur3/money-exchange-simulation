@@ -9,7 +9,7 @@ import javafx.scene.control.TextField;
 public class SignUpController
 {
     @javafx.fxml.FXML
-    private ComboBox userTypeComboBox;
+    private ComboBox<String> userTypeComboBox;
     @javafx.fxml.FXML
     private TextField emailTextField;
     @javafx.fxml.FXML
@@ -21,9 +21,20 @@ public class SignUpController
 
     @javafx.fxml.FXML
     public void initialize() {
+        // Adding roles to the combo box
+        userTypeComboBox.getItems().addAll(
+                "Cashier",
+                "System Manager",
+                "Student",
+                "Business Owner",
+                "Bank Teller ",
+                "Compliance Officer",
+                "Admin",
+                "Audit");
     }
 
     @javafx.fxml.FXML
     public void signUpButton(ActionEvent actionEvent) {
+
     }
 }
