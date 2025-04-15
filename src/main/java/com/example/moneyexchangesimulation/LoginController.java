@@ -119,7 +119,7 @@ public class LoginController {
             Parent root = fxmlLoader.load();
             Scene scene = new Scene(root);
 
-            // ✅ Correct casting of the event source
+
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             stage.setScene(scene);
             stage.show();

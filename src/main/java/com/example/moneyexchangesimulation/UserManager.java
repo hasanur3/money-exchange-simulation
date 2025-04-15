@@ -9,7 +9,7 @@ public class UserManager {
     private static final List<User> userList = new ArrayList<>();
     private static User loggedInUser = null;
 
-    // ✅ Load users from file when the class is first loaded
+
     static {
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("user.bin"))) {
             while (true) {
@@ -51,7 +51,7 @@ public class UserManager {
         System.out.println("User added: " + user.getName());
     }
 
-    // ✅ Save users to the file
+
     private static void saveUsersToFile() {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("user.bin"))) {
             for (User user : userList) {
@@ -62,12 +62,12 @@ public class UserManager {
         }
     }
 
-    // ✅ Get the currently logged-in user
+
     public static User getLoggedInUser() {
         return loggedInUser;
     }
 
-    // ✅ Set the currently logged-in user manually
+
     public static void setLoggedInUser(User user) {
         loggedInUser = user;
     }
