@@ -1,5 +1,8 @@
 package com.example.moneyexchangesimulation.rashmi.Controller;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.TextField;
+
 public class StudentGoal7Controller
 {
     @javafx.fxml.FXML

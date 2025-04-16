@@ -1,5 +1,11 @@
 package com.example.moneyexchangesimulation.rashmi.Controller;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.Label;
+import javafx.scene.control.Tab;
+import javafx.scene.control.TabPane;
+import javafx.scene.control.TextField;
+
 public class StudentGoal6Controller
 {
     @javafx.fxml.FXML
