@@ -1,0 +1,68 @@
+package com.example.moneyexchangesimulation.Israt_jahan_liya.ModelClass;
+
+public class CurrencyExchange {
+    private String name;
+    private int id;
+    private double fromCurrency;
+    private double toCurrency;
+    private double amount;
+
+    public CurrencyExchange(String name, int id, double fromCurrency, double toCurrency, double amount) {
+        this.name = name;
+        this.id = id;
+        this.fromCurrency = fromCurrency;
+        this.toCurrency = toCurrency;
+        this.amount = amount;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public double getToCurrency() {
+        return toCurrency;
+    }
+
+    public void setToCurrency(double toCurrency) {
+        this.toCurrency = toCurrency;
+    }
+
+    public double getFromCurrency() {
+        return fromCurrency;
+    }
+
+    public void setFromCurrency(double fromCurrency) {
+        this.fromCurrency = fromCurrency;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
+
+    @Override
+    public String toString() {
+        return "CurrencyExchange{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", fromCurrency=" + fromCurrency +
+                ", toCurrency=" + toCurrency +
+                ", amount=" + amount +
+                '}';
+    }
+}
