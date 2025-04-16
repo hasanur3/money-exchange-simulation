@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="482.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Hasan.CashierGoal5Controller">
    <children>
       <AnchorPane layoutX="-24.0" layoutY="-2.0" prefHeight="544.0" prefWidth="806.0" style="-fx-background-color: #DDEB9D;">
