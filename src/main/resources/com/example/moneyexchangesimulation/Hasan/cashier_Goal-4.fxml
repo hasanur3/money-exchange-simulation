@@ -1,14 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.moneyexchangesimulation.Hasan.CashierGoal4Controller"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="462.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Hasan.CashierGoal4Controller">
+   <children>
+      <AnchorPane layoutY="-14.0" prefHeight="538.0" prefWidth="778.0" style="-fx-background-color: #DDEB9D;">
+         <children>
+            <Label alignment="CENTER" layoutX="215.0" layoutY="26.0" prefHeight="44.0" prefWidth="305.0" style="-fx-background-color: #143D60;" text="Available Cash Balance" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="368.0" layoutY="139.0" mnemonicParsing="false" onAction="#requestMoreCash" prefHeight="44.0" prefWidth="198.0" style="-fx-background-color: #EB5B00;" text="Request More Cash">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="31.0" layoutY="484.0" mnemonicParsing="false" onAction="#goToDashboard" style="-fx-background-color: #EB5B00;" text="Go to Dashboard">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="cashBalanceArea" editable="false" layoutX="39.0" layoutY="98.0" prefHeight="150.0" prefWidth="306.0" />
+            <Label fx:id="warningLabel" layoutX="222.0" layoutY="428.0" prefHeight="82.0" prefWidth="412.0" text="Warnign Label:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="requestStatusLabel" layoutX="273.0" layoutY="269.0" prefHeight="82.0" prefWidth="412.0" text="Request Staus Label:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>

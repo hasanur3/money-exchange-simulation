@@ -75,10 +75,15 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Label fx:id="confirmationLabel" layoutX="253.0" layoutY="374.0" prefHeight="95.0" prefWidth="386.0" text="Confirmation Label:">
+      <Label fx:id="confirmationLabel" layoutX="289.0" layoutY="374.0" prefHeight="95.0" prefWidth="386.0" text="Confirmation Label:">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
+      <Button layoutX="83.0" layoutY="402.0" mnemonicParsing="false" onAction="#goToDashboard" prefHeight="20.0" prefWidth="170.0" style="-fx-background-color: #A0C878;" text="Go to Dashboard">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

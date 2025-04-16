@@ -8,6 +8,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
+import java.io.IOException;
+
 public class CashierGoal1Controller
 {
     @javafx.fxml.FXML
@@ -102,4 +104,9 @@ public class CashierGoal1Controller
             receiptStatusLabel.setText("No transaction to send receipt");
         }
     }
+
+    @javafx.fxml.FXML
+    public void goToDashboard(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("cashier_dashboard");
     }
+}

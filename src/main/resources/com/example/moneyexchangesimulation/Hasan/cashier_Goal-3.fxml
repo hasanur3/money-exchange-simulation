@@ -1,14 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.moneyexchangesimulation.Hasan.CashierGoal3Controller"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="503.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Hasan.CashierGoal3Controller">
+   <children>
+      <AnchorPane layoutX="-9.0" layoutY="-7.0" prefHeight="517.0" prefWidth="757.0" style="-fx-background-color: #DDEB9D;">
+         <children>
+            <Label alignment="CENTER" layoutX="171.0" layoutY="35.0" prefHeight="44.0" prefWidth="416.0" style="-fx-background-color: #143D60;" text="Handale Refunds and Transaction Corrections" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="transactionIdField" layoutX="65.0" layoutY="110.0" prefHeight="44.0" prefWidth="209.0" promptText="Enter Transaction ID">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Button layoutX="368.0" layoutY="112.0" mnemonicParsing="false" onAction="#findTransactionButton" prefHeight="44.0" prefWidth="198.0" style="-fx-background-color: #EB5B00;" text="Find Transaction">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="transactionDetailsLabel" layoutX="156.0" layoutY="183.0" prefHeight="88.0" prefWidth="395.0" text="Transaction Deails Label:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="14.0" layoutY="470.0" mnemonicParsing="false" onAction="#goToDashboard" style="-fx-background-color: #EB5B00;" text="Go to Dashboard">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="274.0" layoutY="334.0" mnemonicParsing="false" onAction="#correctButton" style="-fx-background-color: #EB5B00;" text="Correct">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="275.0" layoutY="282.0" mnemonicParsing="false" onAction="#refundButton" style="-fx-background-color: #EB5B00;" text="Refund">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="validationLabel" layoutX="467.0" layoutY="258.0" prefHeight="88.0" prefWidth="210.0" text="validation Label:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="confirmationLabel" layoutX="467.0" layoutY="374.0" prefHeight="88.0" prefWidth="210.0" text="confirmation Label:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>
