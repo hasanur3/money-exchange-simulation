@@ -1,10 +1,10 @@
 package com.example.moneyexchangesimulation.rashmi.Controller;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 
-public class StudentGoal7Controller
-{
+public class StudentGoal7Controller {
     @javafx.fxml.FXML
     private TextField emailTextField;
     @javafx.fxml.FXML
@@ -16,16 +16,20 @@ public class StudentGoal7Controller
     public void initialize() {
     }
 
+
     @javafx.fxml.FXML
     public void transferMoney(ActionEvent actionEvent) {
+
     }
 
     @javafx.fxml.FXML
     public void sendSMS(ActionEvent actionEvent) {
+
     }
 
     @javafx.fxml.FXML
     public void validateTrans(ActionEvent actionEvent) {
+
     }
 
     @javafx.fxml.FXML
@@ -38,5 +42,8 @@ public class StudentGoal7Controller
 
     @javafx.fxml.FXML
     public void confirmTrans(ActionEvent actionEvent) {
+
+        }
     }
-}
+
+
