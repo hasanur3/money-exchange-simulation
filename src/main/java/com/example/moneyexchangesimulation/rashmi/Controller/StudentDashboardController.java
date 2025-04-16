@@ -3,7 +3,7 @@ package com.example.moneyexchangesimulation.rashmi.Controller;
 import com.example.moneyexchangesimulation.Hasan.SceneSwitcher;
 import javafx.event.ActionEvent;
 
-import java.io.IOException;
+import javafx.event.ActionEvent;
 
 public class StudentDashboardController
 {
@@ -12,47 +12,40 @@ public class StudentDashboardController
     }
 
     @javafx.fxml.FXML
-    public void availDiscount(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("StudentGoal8");
+    public void availDiscount(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void transferMoney(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("StudentGoal7");
+    public void transferMoney(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void earnRewards(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("StudentGoal4");
+    public void earnRewards(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void currencyExchangeRates(ActionEvent actionEvent) throws IOException {
+    public void currencyExchangeRates(ActionEvent actionEvent) {
         SceneSwitcher.switchTo("StudentGoal1");
     }
 
     @javafx.fxml.FXML
-    public void paymentMethod(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("StudentGoal6");
+    public void paymentMethod(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void eduFinancialTips(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("StudentGoal3");
+    public void eduFinancialTips(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void logOut(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("");
+    public void logOut(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void transaction(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("StudentGoal5");
+    public void transaction(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void convertCurrency(ActionEvent actionEvent) throws IOException {
+    public void convertCurrency(ActionEvent actionEvent) {
         SceneSwitcher.switchTo("StudentGoal2");
     }
 }

@@ -3,11 +3,11 @@ package com.example.moneyexchangesimulation.Israt_jahan_liya.ModelClass;
 public class CurrencyExchange {
     private String name;
     private int id;
-    private double fromCurrency;
-    private double toCurrency;
+    private String fromCurrency;
+    private String toCurrency;
     private double amount;
 
-    public CurrencyExchange(String name, int id, double fromCurrency, double toCurrency, double amount) {
+    public CurrencyExchange(String name, int id, String fromCurrency, String toCurrency, double amount) {
         this.name = name;
         this.id = id;
         this.fromCurrency = fromCurrency;
