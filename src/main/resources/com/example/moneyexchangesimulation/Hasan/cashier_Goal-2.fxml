@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="737.0" style="-fx-background-color: #DDEB9D;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Hasan.CashierGoal2Controller">
+   <children>
+      <Label alignment="CENTER" layoutX="218.0" layoutY="37.0" prefHeight="44.0" prefWidth="301.0" style="-fx-background-color: #143D60;" text="Check Verification ID" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="customerIdField" layoutX="264.0" layoutY="105.0" prefHeight="44.0" prefWidth="209.0" promptText="Enter Customer ID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button layoutX="275.0" layoutY="181.0" mnemonicParsing="false" onAction="#checkVerification" style="-fx-background-color: #EB5B00;" text="Check Verification">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="verificationStatusLabel" layoutX="241.0" layoutY="233.0" prefHeight="88.0" prefWidth="290.0" text="Status">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="actionRequiredLabel" layoutX="223.0" layoutY="342.0" prefHeight="88.0" prefWidth="290.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="386.0" mnemonicParsing="false" onAction="#goToDashboard" style="-fx-background-color: #EB5B00;" text="Go to Dashboard">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

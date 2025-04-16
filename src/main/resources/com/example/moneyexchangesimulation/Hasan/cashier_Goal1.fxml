@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="502.0" prefWidth="910.0" style="-fx-background-color: #DDEB9D;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Hasan.CashierGoal1Controller">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="289.0" layoutY="14.0" prefHeight="35.0" prefWidth="351.0" style="-fx-background-color: #143D60;" text="Customer Exchange Request" textFill="#fcf5f5">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="83.0" layoutY="60.0" mnemonicParsing="false" onAction="#handleNewTransaction" prefHeight="20.0" prefWidth="170.0" style="-fx-background-color: #A0C878;" text="New Transaction">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="customerNameField" layoutX="83.0" layoutY="125.0" prefHeight="40.0" prefWidth="191.0" promptText="Customer Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="amountField" layoutX="83.0" layoutY="305.0" prefHeight="40.0" prefWidth="191.0" promptText="Amount to Ecchange">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="customerIdField" layoutX="83.0" layoutY="186.0" prefHeight="40.0" prefWidth="191.0" promptText="Customer ID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="currencyTypeCombo" layoutX="83.0" layoutY="244.0" prefHeight="40.0" prefWidth="191.0" promptText="Currency Type" />
+      <Button layoutX="344.0" layoutY="125.0" mnemonicParsing="false" onAction="#calculateExchange" prefHeight="40.0" prefWidth="191.0" style="-fx-background-color: #EB5B00;" text="Calculate Amount" textFill="#f4eeee">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="344.0" layoutY="186.0" mnemonicParsing="false" onAction="#validateFunds" prefHeight="40.0" prefWidth="191.0" style="-fx-background-color: #EB5B00;" text="Check Cash Availability" textFill="#f4eeee">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="344.0" layoutY="244.0" mnemonicParsing="false" onAction="#confirmTransaction" prefHeight="40.0" prefWidth="191.0" style="-fx-background-color: #EB5B00;" text="Confirm Transaction" textFill="#f4eeee">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="344.0" layoutY="305.0" mnemonicParsing="false" onAction="#sendReceipt" prefHeight="40.0" prefWidth="191.0" style="-fx-background-color: #EB5B00;" text="Send Receipt" textFill="#f4eeee">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="convertedAmountLabel" layoutX="544.0" layoutY="125.0" prefHeight="40.0" prefWidth="385.0" text="Converted Amount: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="validationLabel" layoutX="544.0" layoutY="186.0" prefHeight="40.0" prefWidth="385.0" text="Cash Availability:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="transactionStatusLabel" layoutX="544.0" layoutY="244.0" prefHeight="40.0" prefWidth="385.0" text="Status: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="receiptStatusLabel" layoutX="544.0" layoutY="305.0" prefHeight="40.0" prefWidth="385.0" text="Receipt Status: ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="confirmationLabel" layoutX="289.0" layoutY="374.0" prefHeight="95.0" prefWidth="386.0" text="Confirmation Label:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="83.0" layoutY="402.0" mnemonicParsing="false" onAction="#goToDashboard" prefHeight="20.0" prefWidth="170.0" style="-fx-background-color: #A0C878;" text="Go to Dashboard">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
