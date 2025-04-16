@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:controller="com.example.moneyexchangesimulation.Hasan.CashierGoal6Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="702.0" style="-fx-background-color: #DDEB9D;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="702.0" style="-fx-background-color: #DDEB9D;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Hasan.CashierGoal6Controller">
    <children>
       <Label alignment="CENTER" layoutX="242.0" layoutY="38.0" prefHeight="40.0" prefWidth="218.0" style="-fx-background-color: #143D60;" text="Exchange Rates" textFill="WHITE">
          <font>
