@@ -7,53 +7,69 @@
 <?import javafx.scene.text.Font?>
 
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="884.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.rashmi.Controller.StudentDashboardController">
-   <top>
-      <AnchorPane prefHeight="90.0" prefWidth="884.0" style="-fx-background-color: #90C67C;" BorderPane.alignment="CENTER">
+<AnchorPane prefHeight="592.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.rashmi.Controller.StudentDashboardController">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="-1.0" prefHeight="592.0" prefWidth="702.0" style="-fx-background-color: #E1EEBC;">
          <children>
-            <Label layoutX="308.0" layoutY="17.0" prefHeight="55.0" prefWidth="242.0" text="Money Exchange App" textAlignment="CENTER">
+            <BorderPane layoutX="1.0" prefHeight="102.0" prefWidth="707.0">
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #90C67C;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="223.0" layoutY="42.0" prefHeight="34.0" prefWidth="293.0" text="Money Exchange Website">
+                           <font>
+                              <Font name="System Bold Italic" size="23.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+            <Button layoutX="63.0" layoutY="143.0" mnemonicParsing="false" onAction="#currencyExchangeRates" prefHeight="30.0" prefWidth="222.0" text="Currency Exchange Rates">
                <font>
-                  <Font name="System Bold Italic" size="23.0" />
+                  <Font size="14.0" />
                </font>
-            </Label>
-            <Button layoutX="711.0" layoutY="32.0" mnemonicParsing="false" onAction="#logOutButton" prefHeight="26.0" prefWidth="106.0" text="Log Out">
+            </Button>
+            <Button layoutX="59.0" layoutY="236.0" mnemonicParsing="false" onAction="#convertCurrency" prefHeight="30.0" prefWidth="222.0" text="Convert Currency Amount">
                <font>
-                  <Font name="System Bold" size="14.0" />
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="55.0" layoutY="320.0" mnemonicParsing="false" onAction="#eduFinancialTips" prefHeight="30.0" prefWidth="230.0" text="Educational Finance Tips">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="54.0" layoutY="409.0" mnemonicParsing="false" onAction="#earnRewards" text="Earn Rewards For Refering Friends">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="450.0" layoutY="143.0" mnemonicParsing="false" onAction="#transaction" prefHeight="30.0" prefWidth="158.0" text="Transaction">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="450.0" layoutY="236.0" mnemonicParsing="false" onAction="#paymentMethod" prefHeight="30.0" prefWidth="158.0" text="Payment Method">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="450.0" layoutY="320.0" mnemonicParsing="false" onAction="#transferMoney" prefHeight="30.0" prefWidth="158.0" text="Transfer Money">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="295.0" layoutY="486.0" mnemonicParsing="false" onAction="#logOut" prefHeight="51.0" prefWidth="150.0" text="Log Out">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="450.0" layoutY="409.0" mnemonicParsing="false" onAction="#availDiscount" prefHeight="30.0" prefWidth="158.0" text="Avail Discount">
+               <font>
+                  <Font size="14.0" />
                </font>
             </Button>
          </children>
       </AnchorPane>
-   </top>
-   <left>
-      <AnchorPane prefHeight="438.0" prefWidth="253.0" style="-fx-background-color: #E1EEBC;" BorderPane.alignment="CENTER">
-         <children>
-            <Button layoutX="32.0" layoutY="14.0" mnemonicParsing="false" onAction="#convertCurrencyButton" prefHeight="26.0" prefWidth="194.0" text="Convert Currency">
-               <font>
-                  <Font name="System Bold" size="11.0" />
-               </font>
-            </Button>
-            <Button layoutX="32.0" layoutY="55.0" mnemonicParsing="false" onAction="#eduFinButton" prefHeight="26.0" prefWidth="194.0" text="Access Educational Finance Tips">
-               <font>
-                  <Font name="System Bold" size="11.0" />
-               </font>
-            </Button>
-            <Button layoutX="32.0" layoutY="96.0" mnemonicParsing="false" onAction="#earnRewardsButton" prefHeight="26.0" prefWidth="194.0" text="Earn Rewards">
-               <font>
-                  <Font name="System Bold" size="11.0" />
-               </font>
-            </Button>
-            <Button layoutX="32.0" layoutY="138.0" mnemonicParsing="false" onAction="#transferMoneyButton" prefHeight="26.0" prefWidth="194.0" text="Transfer Money">
-               <font>
-                  <Font name="System Bold" size="11.0" />
-               </font>
-            </Button>
-         </children>
-      </AnchorPane>
-   </left>
-   <center>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
-   </center>
-   <bottom>
-      <AnchorPane prefHeight="46.0" prefWidth="884.0" BorderPane.alignment="CENTER" />
-   </bottom>
-</BorderPane>
+   </children>
+</AnchorPane>

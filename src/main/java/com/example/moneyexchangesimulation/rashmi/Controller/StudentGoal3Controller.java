@@ -1,4 +1,4 @@
-package com.example.moneyexchangesimulation.rashmi;
+package com.example.moneyexchangesimulation.rashmi.Controller;
 
 public class StudentGoal3Controller
 {

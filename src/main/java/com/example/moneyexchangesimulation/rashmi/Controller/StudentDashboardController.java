@@ -1,7 +1,5 @@
 package com.example.moneyexchangesimulation.rashmi.Controller;
 
-import javafx.event.ActionEvent;
-
 public class StudentDashboardController
 {
     @javafx.fxml.FXML
@@ -9,22 +7,38 @@ public class StudentDashboardController
     }
 
     @javafx.fxml.FXML
-    public void earnRewardsButton(ActionEvent actionEvent) {
+    public void availDiscount(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void eduFinButton(ActionEvent actionEvent) {
+    public void transferMoney(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void logOutButton(ActionEvent actionEvent) {
+    public void earnRewards(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void convertCurrencyButton(ActionEvent actionEvent) {
+    public void currencyExchangeRates(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void transferMoneyButton(ActionEvent actionEvent) {
+    public void paymentMethod(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void eduFinancialTips(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void logOut(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void transaction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void convertCurrency(ActionEvent actionEvent) {
     }
 }
