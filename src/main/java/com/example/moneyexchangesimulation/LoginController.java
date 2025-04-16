@@ -77,11 +77,12 @@ public class LoginController {
         String fxmlFile = null;
 
         // Determine the correct dashboard file
-        if (role.equals("System Manager")) {
+        if (role.equals("Cashier")) {
             fxmlFile = "/oop/firebrigadeoperationsapp/Mahreen2311459/Dispatcher/newDash.fxml";
-        } else if (role.equals("Student")) {
+        } else if (role.equals("System Manager")) {
+                fxmlFile = "/oop/firebrigadeoperationsapp/Mahreen2311459/Firefighter/FirefighterDashboard.fxml";} else if (role.equals("Student")) {
             fxmlFile = "/oop/firebrigadeoperationsapp/Mahreen2311459/Firefighter/FirefighterDashboard.fxml";
-        } else if (role.equals("Business Owner") || role.equals("Training officer")) {
+        } else if (role.equals("Business Owner")) {
             fxmlFile = "dashboard.fxml";
         } else if (role.equals("Bank Teller")) {
             fxmlFile = "/oop/firebrigadeoperationsapp/Technician/TechnicianDashBoard.fxml";
