@@ -26,14 +26,14 @@
    <left>
       <AnchorPane prefHeight="360.0" prefWidth="306.0" style="-fx-background-color: #E1EEBC;" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="36.0" layoutY="14.0" mnemonicParsing="false" onAction="#monitorBusinessExchangeButton" prefHeight="26.0" prefWidth="226.0" text="Monitor Business Exchange" />
-            <Button layoutX="36.0" layoutY="52.0" mnemonicParsing="false" onAction="#offerBusinessLoanButton" prefHeight="26.0" prefWidth="226.0" text="Access Business Loan Offers " />
-            <Button layoutX="37.0" layoutY="101.0" mnemonicParsing="false" onAction="#genBusinessFinRepButton" prefHeight="26.0" prefWidth="225.0" text="Integrate Business Bank Accounts " />
-            <Button layoutX="38.0" layoutY="142.0" mnemonicParsing="false" onAction="#handleEmployeeButton" prefHeight="26.0" prefWidth="223.0" text=" Automate Bulk Transactions" />
-            <Button layoutX="39.0" layoutY="188.0" mnemonicParsing="false" onAction="#manageBusinessExpensesButton" prefHeight="26.0" prefWidth="221.0" text="Generate Business Financial Reports" />
-            <Button layoutX="37.0" layoutY="235.0" mnemonicParsing="false" onAction="#trackTotalExpensesButton" prefHeight="26.0" prefWidth="222.0" text="Manage Business Expenses" />
-            <Button layoutX="36.0" layoutY="276.0" mnemonicParsing="false" onAction="#genExpensesReportButton" prefHeight="26.0" prefWidth="222.0" text="Handle Employee Payroll via Exchange" />
-            <Button layoutX="36.0" layoutY="320.0" mnemonicParsing="false" onAction="#exportDataExpensesButton" prefHeight="26.0" prefWidth="222.0" text="Manage Supplier Payments " />
+            <Button layoutX="36.0" layoutY="14.0" mnemonicParsing="false" onAction="#monitorBusinessExchange" prefHeight="26.0" prefWidth="226.0" text="Monitor Business Exchange" />
+            <Button layoutX="36.0" layoutY="52.0" mnemonicParsing="false" onAction="#accessBusinessLoanOffer" prefHeight="26.0" prefWidth="226.0" text="Access Business Loan Offers " />
+            <Button layoutX="37.0" layoutY="101.0" mnemonicParsing="false" onAction="#integrateBusinessBankAcc" prefHeight="26.0" prefWidth="225.0" text="Integrate Business Bank Accounts " />
+            <Button layoutX="38.0" layoutY="142.0" mnemonicParsing="false" onAction="#automateBulkTrans" prefHeight="26.0" prefWidth="223.0" text=" Automate Bulk Transactions" />
+            <Button layoutX="39.0" layoutY="188.0" mnemonicParsing="false" onAction="#genBusinessFinReports" prefHeight="26.0" prefWidth="221.0" text="Generate Business Financial Reports" />
+            <Button layoutX="37.0" layoutY="235.0" mnemonicParsing="false" onAction="#manageBusinessExpenses" prefHeight="26.0" prefWidth="222.0" text="Manage Business Expenses" />
+            <Button layoutX="36.0" layoutY="276.0" mnemonicParsing="false" onAction="#handleEmployeePayroll" prefHeight="26.0" prefWidth="222.0" text="Handle Employee Payroll via Exchange" />
+            <Button layoutX="36.0" layoutY="320.0" mnemonicParsing="false" onAction="#manageSupplierPayments" prefHeight="26.0" prefWidth="222.0" text="Manage Supplier Payments " />
          </children>
       </AnchorPane>
    </left>
