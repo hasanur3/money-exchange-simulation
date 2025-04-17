@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="564.0" prefWidth="773.0" style="-fx-background-color: #DDEB9D;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Hasan.SystemManagerGoal1Controller">
    <children>
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="175.0" layoutY="34.0" prefHeight="35.0" prefWidth="423.0" style="-fx-background-color: #A0C878;" text="System Status and Security Monitor">
