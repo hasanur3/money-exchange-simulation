@@ -1,14 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.moneyexchangesimulation.Hasan.CashierGoal8Controller"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="525.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Hasan.CashierGoal8Controller">
+   <children>
+      <AnchorPane layoutX="-9.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="760.0" style="-fx-background-color: #DDEB9D;">
+         <children>
+            <Label alignment="CENTER" layoutX="207.0" layoutY="42.0" prefHeight="40.0" prefWidth="288.0" style="-fx-background-color: #143D60;" text="End-of-Day Transaction Logs" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="33.0" layoutY="476.0" mnemonicParsing="false" onAction="#goToDashboard" prefHeight="40.0" prefWidth="162.0" style="-fx-background-color: #EB5B00;" text="Go to Dashboard">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="33.0" layoutY="356.0" mnemonicParsing="false" onAction="#exportLog" prefHeight="40.0" prefWidth="195.0" style="-fx-background-color: #EB5B00;" text="Export Log">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="30.0" layoutY="178.0" mnemonicParsing="false" onAction="#generateDatlyReport" prefHeight="40.0" prefWidth="202.0" style="-fx-background-color: #EB5B00;" text="Generate Daily Report">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="confirmationLabel" layoutX="246.0" layoutY="318.0" prefHeight="188.0" prefWidth="468.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="reportArea" layoutX="244.0" layoutY="108.0" prefHeight="180.0" prefWidth="502.0" />
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>

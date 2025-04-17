@@ -31,19 +31,19 @@ public class CurrencyExchange {
         this.id = id;
     }
 
-    public double getToCurrency() {
+    public String getToCurrency() {
         return toCurrency;
     }
 
-    public void setToCurrency(double toCurrency) {
+    public void setToCurrency(String toCurrency) {
         this.toCurrency = toCurrency;
     }
 
-    public double getFromCurrency() {
+    public String getFromCurrency() {
         return fromCurrency;
     }
 
-    public void setFromCurrency(double fromCurrency) {
+    public void setFromCurrency(String fromCurrency) {
         this.fromCurrency = fromCurrency;
     }
 
