@@ -86,7 +86,7 @@ public class LoginController {
         } else if (role.equals("Business Owner")) {
             fxmlFile = "dashboard.fxml";
         } else if (role.equals("Bank Teller")) {
-            fxmlFile = "/oop/firebrigadeoperationsapp/Technician/TechnicianDashBoard.fxml";
+            fxmlFile = "/com/example/moneyexchangesimulation/Israt_jahan_liya/e_ProcessRefunds.fxml";
         } else if (role.equals("Compliance Officer")) {
             fxmlFile = "/oop/firebrigadeoperationsapp/BattalionChief/BattalionChiefDashbard.fxml";
         } else if (role.equals("Admin")) {
