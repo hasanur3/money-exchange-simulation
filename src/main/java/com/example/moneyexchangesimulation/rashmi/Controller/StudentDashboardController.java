@@ -14,6 +14,7 @@ public class StudentDashboardController
     public void initialize() {
     }
 
+
     @javafx.fxml.FXML
     public void availDiscount(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchTo("StudentGoal8");
@@ -62,4 +63,6 @@ public class StudentDashboardController
 
         SceneSwitcher.switchTo("StudentGoal2");
     }
+
+
 }

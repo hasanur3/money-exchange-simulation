@@ -57,4 +57,5 @@ public class BusinessOwnerDashboardController
     public void automateBulkTrans(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchTo("BusinessOwnerGoal4");
     }
+
 }

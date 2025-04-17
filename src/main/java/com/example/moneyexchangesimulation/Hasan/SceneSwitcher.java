@@ -1,5 +1,6 @@
 package com.example.moneyexchangesimulation.Hasan;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -12,10 +13,8 @@ public class SceneSwitcher {
     public static Stage stage;
 
     public static void switchTo(String fxmlFileName) throws IOException {
-        String fullPath = "/com/example/moneyexchangesimulation/Hasan/" + fxmlFileName + ".fxml";
-        Parent root = FXMLLoader.load(SceneSwitcher.class.getResource(fullPath));
+        Parent root = FXMLLoader.load(SceneSwitcher.class.getResource(fxmlFileName + ".fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.show();
     }
 }

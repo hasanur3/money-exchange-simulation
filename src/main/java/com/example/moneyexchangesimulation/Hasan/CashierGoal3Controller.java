@@ -78,8 +78,8 @@ public class CashierGoal3Controller
         validationLabel.setText("");
     }
 
-    @javafx.fxml.FXML
-    public void goToDashboard(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("cashier_dashboard");
-    }
+//    @javafx.fxml.FXML
+//    public void goToDashboard(ActionEvent actionEvent) throws IOException {
+//        SceneSwitcher.switchTo("cashier_dashboard");
+//    }
 }

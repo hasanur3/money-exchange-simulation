@@ -1,14 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.moneyexchangesimulation.Hasan.SystemManagerDashboardController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="506.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Hasan.SystemManagerDashboardController">
+   <children>
+      <AnchorPane layoutX="-9.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="771.0" style="-fx-background-color: #DDEB9D;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="167.0" layoutY="75.0" prefHeight="35.0" prefWidth="402.0" style="-fx-background-color: #A0C878;" text="System Manager Dashboard">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="213.0" layoutY="428.0" mnemonicParsing="false" onAction="#logOutButton" prefHeight="40.0" prefWidth="282.0" style="-fx-background-color: #EB5B00;" text="Log Out" textFill="#fcfcfc">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <VBox layoutX="40.0" layoutY="155.0" prefHeight="232.0" prefWidth="254.0" spacing="20.0">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#systemStatus" prefHeight="22.0" prefWidth="279.0" style="-fx-background-color: #143D60;" text=" System Status" textFill="#fcfcfc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#userManagement" prefHeight="40.0" prefWidth="282.0" style="-fx-background-color: #143D60;" text="User Management" textFill="#fcfcfc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#backUpData" prefHeight="40.0" prefWidth="282.0" style="-fx-background-color: #143D60;" text="Backup Data" textFill="#fcfcfc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#viewLogs" prefHeight="22.0" prefWidth="279.0" style="-fx-background-color: #143D60;" text="View Logs" textFill="#fcfcfc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox layoutX="410.0" layoutY="155.0" prefHeight="232.0" prefWidth="254.0" spacing="20.0">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#systemUpdates" prefHeight="22.0" prefWidth="279.0" style="-fx-background-color: #143D60;" text="System Updates" textFill="#fcfcfc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#securitySettings" prefHeight="40.0" prefWidth="282.0" style="-fx-background-color: #143D60;" text="Security Settings" textFill="#fcfcfc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#performanceMetrics" prefHeight="40.0" prefWidth="282.0" style="-fx-background-color: #143D60;" text=" Performance Metrics" textFill="#fcfcfc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#restoreBackup" prefHeight="22.0" prefWidth="279.0" style="-fx-background-color: #143D60;" text="Restore Backup" textFill="#fcfcfc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>

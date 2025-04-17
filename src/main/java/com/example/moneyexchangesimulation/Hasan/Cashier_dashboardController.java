@@ -18,6 +18,7 @@ public class Cashier_dashboardController
     @javafx.fxml.FXML
     public void logOutButton(ActionEvent actionEvent) throws IOException {
 
+
     }
 
     @javafx.fxml.FXML
@@ -47,11 +48,11 @@ public class Cashier_dashboardController
 
     @javafx.fxml.FXML
     public void processExchange(ActionEvent actionEvent) throws IOException{
-        SceneSwitcher.switchTo("cashier_Goal1");
+        SceneSwitcher.switchTo("/com/example/moneyexchangesimulation/Hasan/cashier_Goal1.fxml");
     }
 
-    @javafx.fxml.FXML
-    public void refunds(ActionEvent actionEvent) throws IOException{
-        SceneSwitcher.switchTo("cashier_Goal-3");
-    }
+//    @javafx.fxml.FXML
+//    public void refunds(ActionEvent actionEvent) throws IOException{
+//        SceneSwitcher.switchTo("cashier_Goal-3");
+//    }
 }

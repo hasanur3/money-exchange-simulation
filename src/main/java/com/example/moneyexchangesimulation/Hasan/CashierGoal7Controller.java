@@ -57,8 +57,8 @@ public class CashierGoal7Controller
         }
     }
 
-    @javafx.fxml.FXML
-    public void goToDashboard(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("cashier_dashboard");
-    }
+//    @javafx.fxml.FXML
+//    public void goToDashboard(ActionEvent actionEvent) throws IOException {
+//        SceneSwitcher.switchTo("cashier_dashboard");
+//    }
 }
