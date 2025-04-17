@@ -35,6 +35,26 @@ public class SignUpController
 
     @javafx.fxml.FXML
     public void signUpButton(ActionEvent actionEvent) {
+        String name = nameTextField.getText().trim();
+        String email = emailTextField.getText().trim(); // optional
+        String password = passwordField.getText();
+        String role = userTypeComboBox.getSelectionModel().getSelectedItem();
 
+        if (name.isEmpty() || password.isEmpty() || role == null) {
+            messageLabel.setText("Please fill all fields");
+            return;
+        }
+
+        // Create and save user
+        User newUser = new User(name, password, role);
+        UserManager.addUser(newUser);
+
+        messageLabel.setText("Signup successful! Go to login.");
+
+        // Optional: clear fields
+        nameTextField.clear();
+        passwordField.clear();
+        emailTextField.clear();
+        userTypeComboBox.getSelectionModel().clearSelection();
     }
 }

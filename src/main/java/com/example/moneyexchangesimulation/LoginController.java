@@ -38,49 +38,50 @@ public class LoginController {
                 "Audit");
 
     }
-
     @javafx.fxml.FXML
-    public void loginButton(ActionEvent actionEvent) throws IOException {
-// Get input values
+    public void loginButton(ActionEvent actionEvent) {
         String username = userNameTextField.getText().trim();
         String password = passwordField.getText();
         String selectedRole = userComboBox.getSelectionModel().getSelectedItem();
 
-        // Check for empty fields
         if (username.isEmpty() || password.isEmpty()) {
             messageLabel.setText("Username or Password cannot be empty");
             return;
         }
+
         if (selectedRole == null) {
             messageLabel.setText("Please select a role");
             return;
         }
 
-        // Authenticate user
-        List<User> userList = UserManager.getUsers();
-        for (User user : userList) {
-            if (user.getName().equals(username) && user.getPassword().equals(password)) {
-                // Set the logged-in user
+        User user = UserManager.checkLogIn(username, password);
+
+        if (user != null) {
+            if (user.getRole().equals(selectedRole)) {
                 UserManager.setLoggedInUser(user);
                 messageLabel.setText("Login successful");
-                // Open the respective dashboard
-//                openDashboard(userComboBox.getselected);
-//                return;
+                try {
+                    openDashboard(user.getRole(), actionEvent);
+                } catch (IOException e) {
+                    messageLabel.setText("Failed to open dashboard.");
+                    e.printStackTrace();
+                }
+            } else {
+                messageLabel.setText("Role mismatch for this user.");
             }
+        } else {
+            messageLabel.setText("Invalid username or password.");
         }
-
-        // If authentication fails
-        messageLabel.setText("Invalid username or password");
     }
 
     private void openDashboard(String role, ActionEvent event) throws IOException {
         String fxmlFile = null;
 
-        // Determine the correct dashboard file
         if (role.equals("Cashier")) {
-            fxmlFile = "/oop/firebrigadeoperationsapp/Mahreen2311459/Dispatcher/newDash.fxml";
+            fxmlFile = "/com/example/moneyexchangesimulation/Hasan/cashier_dashboard.fxml";
         } else if (role.equals("System Manager")) {
-                fxmlFile = "/oop/firebrigadeoperationsapp/Mahreen2311459/Firefighter/FirefighterDashboard.fxml";} else if (role.equals("Student")) {
+            fxmlFile = "/com/example/moneyexchangesimulation/Hasan/systemManagerDashboard.fxml";
+        } else if (role.equals("Student")) {
             fxmlFile = "/oop/firebrigadeoperationsapp/Mahreen2311459/Firefighter/FirefighterDashboard.fxml";
         } else if (role.equals("Business Owner")) {
             fxmlFile = "dashboard.fxml";
@@ -92,26 +93,18 @@ public class LoginController {
             fxmlFile = "/oop/firebrigadeoperationsapp/Forensic_expert/dashboard_forensic_expert.fxml";
         } else if (role.equals("Audit")) {
             fxmlFile = "/oop/firebrigadeoperationsapp/Search_operator/dashboard_search_operator.fxml";
-            System.out.println(getClass().getResource(fxmlFile));
         }
-        if (fxmlFile != null) {
-            try {
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(fxmlFile));
-                Parent root = fxmlLoader.load();
-                Scene scene = new Scene(root);
 
-                Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                stage.setScene(scene);
-                stage.show();
-            } catch (IOException e) {
-                e.printStackTrace();
-                messageLabel.setText("Error loading the dashboard.");
-            }
+        if (fxmlFile != null) {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFile));
+            Parent root = loader.load();
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
         } else {
-            messageLabel.setText("Dashboard for this role is not implemented yet.");
+            messageLabel.setText("Dashboard for this role is not yet implemented.");
         }
     }
-
 
     @javafx.fxml.FXML
     public void signUpButton(ActionEvent actionEvent) {
@@ -120,12 +113,12 @@ public class LoginController {
             Parent root = fxmlLoader.load();
             Scene scene = new Scene(root);
 
-
             Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {
             messageLabel.setText("Error loading the sign-up page.");
+            e.printStackTrace();
         }
     }
 }
