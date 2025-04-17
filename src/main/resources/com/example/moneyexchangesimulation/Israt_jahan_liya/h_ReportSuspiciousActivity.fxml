@@ -1,14 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.moneyexchangesimulation.Israt_jahan_liya.Controller.h_ReportSuspiciousActivityController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="625.0" prefWidth="658.0" style="-fx-background-color: plum;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Israt_jahan_liya.Controller.h_ReportSuspiciousActivityController">
+   <children>
+      <Label layoutX="182.0" layoutY="22.0" style="-fx-background-color: lightpink;" text="Suspicious Activity Report">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="431.0" layoutY="372.0" style="-fx-background-color: lightpink;" text="Account Status">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="systemFlagLabel" layoutX="65.0" layoutY="447.0" prefHeight="27.0" prefWidth="234.0" style="-fx-background-color: lightpink;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="accountStatusLabel" layoutX="391.0" layoutY="447.0" prefHeight="27.0" prefWidth="220.0" style="-fx-background-color: lightpink;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="246.0" style="-fx-background-color: lightpink;" text="Amount">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="177.0" style="-fx-background-color: lightpink;" text="Transaction Type">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="372.0" style="-fx-background-color: lightpink;" text="System Flag">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="104.0" style="-fx-background-color: lightpink;" text="Customer ID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="customerNameField" layoutX="233.0" layoutY="103.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="transactionDetailsField" layoutX="233.0" layoutY="177.0" style="-fx-background-color: white;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="amountField" layoutX="233.0" layoutY="247.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Separator layoutX="453.0" layoutY="92.0" orientation="VERTICAL" prefHeight="200.0" />
+      <Button layoutX="500.0" layoutY="150.0" mnemonicParsing="false" onAction="#submitReportButton" text="Submit Report">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="472.0" layoutY="213.0" mnemonicParsing="false" onAction="#verifyLockButton" text="Verify and Lock Account">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Separator layoutX="8.0" layoutY="338.0" prefHeight="3.0" prefWidth="641.0" />
+   </children>
 </AnchorPane>

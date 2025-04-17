@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="534.0" prefWidth="631.0" style="-fx-background-color: slategray;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Israt_jahan_liya.Controller.g_GenerateReportsController">
    <children>
       <Label layoutX="174.0" layoutY="27.0" style="-fx-background-color: lightgray;" text="Generate Financial Reports">
