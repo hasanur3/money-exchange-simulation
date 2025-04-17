@@ -1,14 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.moneyexchangesimulation.Israt_jahan_liya.Controller.f_ExchangeRateInquiryController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="566.0" prefWidth="679.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Israt_jahan_liya.Controller.f_ExchangeRateInquiryController">
+   <children>
+      <Label layoutX="237.0" layoutY="22.0" style="-fx-background-color: steelblue;" text="Exchange Rate Inquiry">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="114.0" style="-fx-background-color: steelblue;" text="Currency Type">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="191.0" style="-fx-background-color: steelblue;" text="Amount">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="currentRateLabel" layoutX="242.0" layoutY="328.0" prefHeight="27.0" prefWidth="212.0" style="-fx-background-color: steelblue;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="328.0" style="-fx-background-color: steelblue;" text="Current Rate">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="422.0" style="-fx-background-color: steelblue;" text="Trend Insight">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="trendLabel" layoutX="249.0" layoutY="422.0" prefHeight="27.0" prefWidth="212.0" style="-fx-background-color: steelblue;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="currencyTypeComboBox" layoutX="242.0" layoutY="110.0" prefHeight="35.0" prefWidth="183.0" />
+      <TextField fx:id="amountField" layoutX="242.0" layoutY="191.0" prefHeight="30.0" prefWidth="183.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="472.0" layoutY="152.0" mnemonicParsing="false" onAction="#getRateInfoButton" text="getRateInfoButton">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Separator layoutX="25.0" layoutY="263.0" prefHeight="10.0" prefWidth="621.0" />
+   </children>
 </AnchorPane>
