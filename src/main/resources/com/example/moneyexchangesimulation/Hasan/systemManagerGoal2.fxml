@@ -39,7 +39,7 @@
                   </Button>
                </children>
             </HBox>
-            <Label fx:id="updateStatusLabel" alignment="CENTER" layoutX="242.0" layoutY="396.0" prefHeight="124.0" prefWidth="306.0" text="Status Label">
+            <Label fx:id="updateStatusLabel" alignment="CENTER" layoutX="219.0" layoutY="396.0" prefHeight="124.0" prefWidth="329.0" text="Status Label">
                <font>
                   <Font size="18.0" />
                </font>
