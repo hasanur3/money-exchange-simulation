@@ -1,14 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.moneyexchangesimulation.Hasan.SystemManagerGoal7Controller"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Hasan.SystemManagerGoal7Controller">
+   <children>
+      <AnchorPane prefHeight="670.0" prefWidth="838.0" style="-fx-background-color: #DDEB9D;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="230.0" layoutY="37.0" prefHeight="35.0" prefWidth="450.0" style="-fx-background-color: #A0C878;" text="📊 System Performance Metrics">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="616.0" mnemonicParsing="false" onAction="#goToDashboard" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #EB5B00;" text="⬅ Back to Dashboard" textFill="#fcfcfc">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="313.0" layoutY="96.0" mnemonicParsing="false" onAction="#fetchMetrics" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #EB5B00;" text="Fetch Metrics" textFill="#fcfcfc">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <BarChart fx:id="performanceChart" barGap="10.0" categoryGap="20.0" layoutX="98.0" layoutY="149.0" prefHeight="347.0" prefWidth="630.0" title="System Metrics">
+              <xAxis>
+                <CategoryAxis label="Metric" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis label="Value" side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="298.0" layoutY="524.0" mnemonicParsing="false" onAction="#optimizeSystem" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #EB5B00;" text="Optimize System" textFill="#fcfcfc">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="statusLabel" layoutX="321.0" layoutY="588.0" prefHeight="27.0" prefWidth="0.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>
