@@ -28,8 +28,6 @@ public class BusinessOwnerGoal4Controller
     @javafx.fxml.FXML
     public void bulkTransaction(ActionEvent actionEvent) {
         String account = bankAccountNumberTextField.getText().trim();
-
-        // Validate input (VR)
         if (account.isEmpty() || !account.matches("\\d{10,18}")) {
             validationLabel.setText("Invalid account number.");
             return;
@@ -37,10 +35,8 @@ public class BusinessOwnerGoal4Controller
 
         validationLabel.setText("Account validated.");
 
-        // Simulate processing (DP, OP)
-        statusLabel.setText("Bulk transactions processed successfully.");
 
-        // Simulate receipt confirmation (UIE, DP, OP)
+        statusLabel.setText("Bulk transactions processed successfully.");
         confirmationLabel.setText("Receipts downloaded successfully.");
     }
 
