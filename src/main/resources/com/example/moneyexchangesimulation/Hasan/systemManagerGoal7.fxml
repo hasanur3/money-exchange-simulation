@@ -36,7 +36,7 @@
                 <NumberAxis label="Value" side="LEFT" />
               </yAxis>
             </BarChart>
-            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="298.0" layoutY="524.0" mnemonicParsing="false" onAction="#optimizeSystem" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #EB5B00;" text="Optimize System" textFill="#fcfcfc">
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="319.0" layoutY="514.0" mnemonicParsing="false" onAction="#optimizeSystem" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #EB5B00;" text="Optimize System" textFill="#fcfcfc">
                <font>
                   <Font size="18.0" />
                </font>
