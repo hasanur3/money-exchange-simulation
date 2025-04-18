@@ -1,14 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.moneyexchangesimulation.Israt_jahan_liya.Controller.i_MonitorFraudController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="623.0" prefWidth="700.0" style="-fx-background-color: darkslategray;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Israt_jahan_liya.Controller.i_MonitorFraudController">
+   <children>
+      <Label layoutX="165.0" layoutY="28.0" style="-fx-background-color: darkolivegreen;" text="Transaction Monitoring Dashboard">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="114.0" style="-fx-background-color: darkolivegreen;" text="Transaction ID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="182.0" style="-fx-background-color: darkolivegreen;" text="Minimum Amount">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="riskLevelLabel" layoutX="82.0" layoutY="499.0" prefHeight="27.0" prefWidth="239.0" style="-fx-background-color: darkolivegreen;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="147.0" layoutY="428.0" style="-fx-background-color: darkolivegreen;" text="Risk Level">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="complianceStatusLabel" layoutX="397.0" layoutY="499.0" prefHeight="27.0" prefWidth="245.0" style="-fx-background-color: darkolivegreen;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="436.0" layoutY="430.0" style="-fx-background-color: darkolivegreen;" text="Compliance Status">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="transactionIdField" layoutX="255.0" layoutY="115.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="minAmountField" layoutX="255.0" layoutY="183.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="86.0" layoutY="297.0" mnemonicParsing="false" onAction="#applyFilterButton" text="Apply Filter">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="273.0" layoutY="299.0" mnemonicParsing="false" onAction="#inspectButton" text="Inspect Transaction">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="483.0" layoutY="299.0" mnemonicParsing="false" onAction="#logComplianceButton" text="Log Compliance Update">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Separator layoutX="30.0" layoutY="379.0" prefHeight="0.0" prefWidth="643.0" />
+   </children>
 </AnchorPane>
