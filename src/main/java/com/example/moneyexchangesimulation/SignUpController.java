@@ -1,10 +1,13 @@
 package com.example.moneyexchangesimulation;
 
+import com.example.moneyexchangesimulation.rashmi.ModelClass.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+
+import java.io.IOException;
 
 public class SignUpController
 {
@@ -56,5 +59,10 @@ public class SignUpController
         passwordField.clear();
         emailTextField.clear();
         userTypeComboBox.getSelectionModel().clearSelection();
+    }
+
+    @javafx.fxml.FXML
+    public void logIn(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("Login");
     }
 }

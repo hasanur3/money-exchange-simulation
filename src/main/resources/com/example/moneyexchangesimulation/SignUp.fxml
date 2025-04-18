@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.SignUpController">
    <children>
       <TextField fx:id="nameTextField" layoutX="57.0" layoutY="41.0" prefHeight="26.0" prefWidth="242.0" promptText="Name" />
@@ -21,5 +20,10 @@
       </Button>
       <ComboBox fx:id="userTypeComboBox" layoutX="351.0" layoutY="176.0" prefHeight="26.0" prefWidth="214.0" promptText="Select User Type" />
       <Label fx:id="messageLabel" layoutX="185.0" layoutY="336.0" prefHeight="46.0" prefWidth="262.0" />
+      <Button layoutX="483.0" layoutY="18.0" mnemonicParsing="false" onAction="#logIn" prefHeight="26.0" prefWidth="78.0" text="Log In">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
