@@ -5,7 +5,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="592.0" prefWidth="800.0" style="-fx-background-color: #E1EEBC;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.rashmi.Controller.StudentGoal8Controller">
    <children>
       <Button layoutX="96.0" layoutY="50.0" mnemonicParsing="false" onAction="#stuDis" text="Student Discounts" />
