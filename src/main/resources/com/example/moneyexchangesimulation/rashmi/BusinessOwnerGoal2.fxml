@@ -12,7 +12,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="775.0" style="-fx-background-color: #E1EEBC;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.rashmi.Controller.BusinessOwnerGoal2Controller">
    <children>
-      <TextField fx:id="totalTransAmountTextField" layoutX="14.0" layoutY="47.0" prefHeight="26.0" prefWidth="225.0" promptText="Enter Your Total Transaction Amount" />
+      <TextField fx:id="totalTransAmountTextField" layoutX="14.0" layoutY="35.0" prefHeight="26.0" prefWidth="225.0" promptText="Enter Bank Account number" />
       <Button layoutX="320.0" layoutY="48.0" mnemonicParsing="false" onAction="#businessLoan" text="Business Loan" />
       <Label fx:id="eligibleForLoanOrNot" layoutX="180.0" layoutY="132.0" prefHeight="41.0" prefWidth="204.0" text="Eligible for loan or not" />
       <TableView fx:id="loanTableView" layoutX="27.0" layoutY="246.0" prefHeight="200.0" prefWidth="325.0">
@@ -32,5 +32,7 @@
          </font>
       </Button>
       <Button layoutX="27.0" layoutY="470.0" mnemonicParsing="false" onAction="#dashboard" text="Back To Dashboard" />
+      <TextField fx:id="nameTextFiled" layoutX="14.0" layoutY="68.0" prefHeight="26.0" prefWidth="225.0" promptText="Name" />
+      <TextField fx:id="emailTextField" layoutX="14.0" layoutY="105.0" prefHeight="26.0" prefWidth="225.0" promptText="Email" />
    </children>
 </AnchorPane>
