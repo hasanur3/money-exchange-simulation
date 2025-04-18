@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="497.0" prefWidth="688.0" style="-fx-background-color: #E1EEBC;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.rashmi.Controller.BusinessOwnerGoal3Controller">
    <children>
       <Button layoutX="73.0" layoutY="66.0" mnemonicParsing="false" onAction="#addBankAccount" prefHeight="64.0" prefWidth="174.0" text="Add Bank Account">
@@ -20,5 +19,11 @@
       <Button layoutX="219.0" layoutY="277.0" mnemonicParsing="false" onAction="#update" prefHeight="26.0" prefWidth="78.0" text="Update" />
       <Label fx:id="validateOrNot" layoutX="438.0" layoutY="151.0" prefHeight="35.0" prefWidth="105.0" text="validate or not" />
       <Label fx:id="updateOrRemoved" layoutX="291.0" layoutY="343.0" prefHeight="35.0" prefWidth="130.0" text="updated or removed" />
+      <Button layoutX="298.0" layoutY="426.0" mnemonicParsing="false" onAction="#logOut" text="Log Out">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="33.0" layoutY="432.0" mnemonicParsing="false" onAction="#dashboard" prefHeight="26.0" prefWidth="124.0" text="Back To Dashboard" />
    </children>
 </AnchorPane>
