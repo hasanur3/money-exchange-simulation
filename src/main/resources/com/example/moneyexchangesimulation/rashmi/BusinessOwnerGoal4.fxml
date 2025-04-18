@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.moneyexchangesimulation.rashmi.Controller.BusinessOwnerGoal4Controller"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="469.0" prefWidth="637.0" style="-fx-background-color: #E1EEBC;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.rashmi.Controller.BusinessOwnerGoal4Controller">
+   <children>
+      <TextField fx:id="bankAccountNumberTextField" layoutX="43.0" layoutY="38.0" prefHeight="26.0" prefWidth="180.0" promptText="Enter bank Account Number" />
+      <Button layoutX="281.0" layoutY="39.0" mnemonicParsing="false" onAction="#bulkTransaction" text="Bulk Transaction" />
+      <Label fx:id="validationLabel" layoutX="223.0" layoutY="118.0" prefHeight="35.0" prefWidth="103.0" text="validation" />
+      <Label fx:id="statusShowLabel" layoutX="223.0" layoutY="174.0" prefHeight="35.0" prefWidth="113.0" text="status show" />
+      <Label fx:id="confirmationLabel" layoutX="219.0" layoutY="235.0" prefHeight="35.0" prefWidth="114.0" text="confirmation" />
+   </children>
 </AnchorPane>
