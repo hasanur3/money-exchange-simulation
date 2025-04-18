@@ -82,17 +82,17 @@ public class LoginController {
         } else if (role.equals("System Manager")) {
             fxmlFile = "/com/example/moneyexchangesimulation/Hasan/systemManagerDashboard.fxml";
         } else if (role.equals("Student")) {
-            fxmlFile = "/oop/firebrigadeoperationsapp/Mahreen2311459/Firefighter/FirefighterDashboard.fxml";
+            fxmlFile = "/com/example/moneyexchangesimulation/Hasan/StudentDashboard.fxml";
         } else if (role.equals("Business Owner")) {
-            fxmlFile = "dashboard.fxml";
+            fxmlFile = "/com/example/moneyexchangesimulation/Hasan/BusinessOwnerDashboard.fxml";
         } else if (role.equals("Bank Teller")) {
             fxmlFile = "/com/example/moneyexchangesimulation/Israt_jahan_liya/e_ProcessRefunds.fxml";
         } else if (role.equals("Compliance Officer")) {
-            fxmlFile = "/oop/firebrigadeoperationsapp/BattalionChief/BattalionChiefDashbard.fxml";
+            fxmlFile = "  ";
         } else if (role.equals("Admin")) {
-            fxmlFile = "/oop/firebrigadeoperationsapp/Forensic_expert/dashboard_forensic_expert.fxml";
+            fxmlFile = "  ";
         } else if (role.equals("Audit")) {
-            fxmlFile = "/oop/firebrigadeoperationsapp/Search_operator/dashboard_search_operator.fxml";
+            fxmlFile = "  ";
         }
 
         if (fxmlFile != null) {
