@@ -4,6 +4,8 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+import java.io.IOException;
+
 public class SystemManagerGoal6Controller
 {
     @javafx.fxml.FXML
@@ -39,6 +41,7 @@ public class SystemManagerGoal6Controller
     }
 
     @javafx.fxml.FXML
-    public void goToDashboard(ActionEvent actionEvent) {
+    public void goToDashboard(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("systemManagerDashboard");
     }
 }

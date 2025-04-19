@@ -4,6 +4,8 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 
+import java.io.IOException;
+
 public class SystemManagerGoal3Controller
 {
     @javafx.fxml.FXML
@@ -29,6 +31,7 @@ public class SystemManagerGoal3Controller
     }
 
     @javafx.fxml.FXML
-    public void goToDashboard(ActionEvent actionEvent) {
+    public void goToDashboard(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("systemManagerDashboard");
     }
 }

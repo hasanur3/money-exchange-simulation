@@ -48,8 +48,8 @@ public class CashierGoal4Controller
         requestStatusLabel.setText("✅ Request sent to admin for more cash.");
     }
 
-//    @javafx.fxml.FXML
-//    public void goToDashboard(ActionEvent actionEvent) throws IOException {
-//        SceneSwitcher.switchTo("cashier_dashboard");
-//    }
+    @javafx.fxml.FXML
+    public void goToDashboard(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("cashier_dashboard");
+    }
 }

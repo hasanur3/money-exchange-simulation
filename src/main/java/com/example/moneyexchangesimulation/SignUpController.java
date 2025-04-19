@@ -2,10 +2,15 @@ package com.example.moneyexchangesimulation;
 
 import com.example.moneyexchangesimulation.rashmi.ModelClass.SceneSwitcher;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 
@@ -63,6 +68,9 @@ public class SignUpController
 
     @javafx.fxml.FXML
     public void logIn(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("Login");
+        Parent root = FXMLLoader.load(getClass().getResource("/com/example/moneyexchangesimulation/Login.fxml"));
+        Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(root));
+        stage.show();
     }
 }

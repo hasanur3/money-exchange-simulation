@@ -8,6 +8,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
+import java.io.IOException;
+
 public class CashierGoal6Controller {
 
     @javafx.fxml.FXML
@@ -59,4 +61,9 @@ public class CashierGoal6Controller {
         public void sendViaEmail(ActionEvent actionEvent) {
             confirmationLabel.setText("📧 Exchange rates sent via email.");
         }
+
+    @javafx.fxml.FXML
+    public void goToDashboard(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("cashier_dashboard");
     }
+}

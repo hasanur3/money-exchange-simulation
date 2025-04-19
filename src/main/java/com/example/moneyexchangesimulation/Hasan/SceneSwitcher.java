@@ -12,13 +12,9 @@ import java.io.IOException;
 public class SceneSwitcher {
     public static Stage stage;
 
-    public static void setStage(Stage primaryStage) {
-        stage = primaryStage;
-    }
-
     public static void switchTo(String fxmlFileName) throws IOException {
-
-        Parent root = FXMLLoader.load(SceneSwitcher.class.getResource(fxmlFileName + ".fxml"));
+        String path = "/com/example/moneyexchangesimulation/Hasan/" + fxmlFileName + ".fxml";
+        Parent root = FXMLLoader.load(SceneSwitcher.class.getResource(path));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();

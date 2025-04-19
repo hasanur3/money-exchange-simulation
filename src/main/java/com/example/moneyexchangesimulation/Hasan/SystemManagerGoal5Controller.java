@@ -3,6 +3,8 @@ package com.example.moneyexchangesimulation.Hasan;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 
+import java.io.IOException;
+
 public class SystemManagerGoal5Controller
 {
     @javafx.fxml.FXML
@@ -34,6 +36,7 @@ public class SystemManagerGoal5Controller
     }
 
     @javafx.fxml.FXML
-    public void goToDashboard(ActionEvent actionEvent) {
+    public void goToDashboard(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("systemManagerDashboard");
     }
 }

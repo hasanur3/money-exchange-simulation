@@ -36,9 +36,8 @@ public class CashierGoal2Controller
             actionRequiredLabel.setText("Please request additional documents or deny the transaction.");
         }
     }
-
-//    @javafx.fxml.FXML
-//    public void goToDashboard(ActionEvent actionEvent) throws IOException {
-//        SceneSwitcher.switchTo("cashier_dashboard");
-//    }
+    @javafx.fxml.FXML
+       public void goToDashboard(ActionEvent actionEvent) throws IOException {
+       SceneSwitcher.switchTo("cashier_dashboard");
+    }
 }

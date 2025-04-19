@@ -46,8 +46,8 @@ public class CashierGoal5Controller
         confirmationLabel.setText("📧 Receipt emailed successfully!");
     }
 
-//    @javafx.fxml.FXML
-//    public void goToDashboard(ActionEvent actionEvent) throws IOException {
-//        SceneSwitcher.switchTo("cashier_dashboard");
-//    }
+    @javafx.fxml.FXML
+    public void goToDashboard(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("cashier_dashboard");
+    }
 }
