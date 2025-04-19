@@ -32,10 +32,11 @@
       <Button layoutX="308.0" layoutY="508.0" mnemonicParsing="false" onAction="#confirmTransactionButtonOnAction" text="confirmTransactionButton" />
       <Button layoutX="122.0" layoutY="508.0" mnemonicParsing="false" onAction="#validateLimitButtonOnAction" text="validateLimitButton" />
       <Button layoutX="514.0" layoutY="508.0" mnemonicParsing="false" onAction="#processExchangeButtonOnAction" text="processExchangeButton" />
-      <Button layoutX="437.0" layoutY="119.0" mnemonicParsing="false" onAction="#verifyButtonOnAction" text="verifyButton" />
+      <Button layoutX="351.0" layoutY="119.0" mnemonicParsing="false" onAction="#verifyButtonOnAction" text="verifyButton" />
       <Separator layoutX="31.0" layoutY="198.0" prefHeight="0.0" prefWidth="592.0" />
       <ComboBox fx:id="fromCurrencyBoxComboBox" layoutX="169.0" layoutY="272.0" prefWidth="150.0" />
       <ComboBox fx:id="toCurrencyBoxComboBox" layoutX="465.0" layoutY="272.0" prefWidth="150.0" />
       <Separator layoutX="38.0" layoutY="405.0" prefHeight="3.0" prefWidth="592.0" />
+      <Label fx:id="errorMessageLabal" layoutX="486.0" layoutY="123.0" text="error message" />
    </children>
 </AnchorPane>
