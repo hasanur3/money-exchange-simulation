@@ -1,111 +1,83 @@
 package com.example.moneyexchangesimulation.Israt_jahan_liya.Controller;
 
-import com.example.moneyexchangesimulation.Israt_jahan_liya.ModelClass.CurrencyExchange;
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-public class a_CustomerCurrencyExchangeController
-{
+public class a_CustomerCurrencyExchangeController {
     @javafx.fxml.FXML
-    private TextField customerNameFieldTextField;
+    private TextField customerIDField;
     @javafx.fxml.FXML
-    private ComboBox<String> toCurrencyBoxComboBox;
+    private ComboBox<String> sourceCurrencyBox;
     @javafx.fxml.FXML
-    private ComboBox<String> fromCurrencyBoxComboBox;
+    private Label exchangeRateLabel;
     @javafx.fxml.FXML
-    private TextField idFieldTextField;
+    private ComboBox<String> targetCurrencyBox;
     @javafx.fxml.FXML
-    private TextField amountFieldTextField;
+    private Label transactionStatusLabel;
     @javafx.fxml.FXML
-    private Label errorMessageLabal;
+    private TextField amountField;
 
     @javafx.fxml.FXML
     public void initialize() {
-        fromCurrencyBoxComboBox.getItems().addAll("USD", "EUR", "BDT");
-        toCurrencyBoxComboBox.getItems().addAll("USD", "EUR", "BDT");
+        sourceCurrencyBox.getItems().addAll("USD", "EUR", "BDT");
+        targetCurrencyBox.getItems().addAll("USD", "EUR", "BDT");
+
+        // Set default selection for the combo boxes
+        sourceCurrencyBox.setValue("USD");
+        targetCurrencyBox.setValue("BDT");
     }
 
     @javafx.fxml.FXML
-    public void confirmTransactionButtonOnAction(ActionEvent actionEvent) {
-        errorMessageLabal.setText("Transaction confirmed. Receipt issued.");
-    }
+    public void onFetchExchangeRate(ActionEvent actionEvent) {
+        String source = sourceCurrencyBox.getValue();
+        String target = targetCurrencyBox.getValue();
 
-    private double getRate(String from, String to) {
-        // Dummy rates
-        if (from.equals("USD") && to.equals("BDT")) return 109.5;
-        if (from.equals("EUR") && to.equals("BDT")) return 116.8;
-        if (from.equals("BDT") && to.equals("USD")) return 0.0091;
-        if (from.equals("BDT") && to.equals("EUR")) return 0.0085;
-        return 1.0; // same currency or fallback
-    }
-
-    @javafx.fxml.FXML
-    public void verifyButtonOnAction(ActionEvent actionEvent) {
-        String id = idFieldTextField.getText();
-        if (id != null && !id.isEmpty()) {
-            errorMessageLabal.setText("ID verified: " + id);
-        } else {
-            errorMessageLabal.setText("Please enter a valid customer ID.");
+        if (source == null || target == null || source.equals(target)) {
+            exchangeRateLabel.setText("Please select different source and target currencies.");
+            return;
         }
+
+        // Dummy rate and fee for demonstration
+        double rate = getDummyRate(source, target);
+        double fee = 5.00;
+
+        exchangeRateLabel.setText(String.format("Rate: %.2f | Fee: %.2f", rate, fee));
     }
 
     @javafx.fxml.FXML
-    public void validateLimitButtonOnAction(ActionEvent actionEvent) {
-        String amountText = amountFieldTextField.getText();
-        try {
-            double amount = Double.parseDouble(amountText);
-            if (amount > 0 && amount <= 10000) {
-                errorMessageLabal.setText("Amount is within the allowed limit.");
-            } else {
-                errorMessageLabal.setText("Amount is too high or invalid.");
-            }
-        } catch (NumberFormatException e) {
-            errorMessageLabal.setText("Please enter a valid number for amount.");
-        }
-    }
+    public void onProcessTransaction(ActionEvent actionEvent) {
+        String customerId = customerIDField.getText();
+        String amountText = amountField.getText();
 
-    @javafx.fxml.FXML
-    public void processExchangeButtonOnAction(ActionEvent actionEvent) {
-        String name = customerNameFieldTextField.getText();
-        String idText = idFieldTextField.getText();
-        String from = fromCurrencyBoxComboBox.getValue();
-        String to = toCurrencyBoxComboBox.getValue();
-        String amountText = amountFieldTextField.getText();
-
-        if (name.isEmpty() || idText.isEmpty() || from == null || to == null || amountText.isEmpty()) {
-            errorMessageLabal.setText("Fill in all fields before processing.");
+        if (customerId.isEmpty() || amountText.isEmpty()) {
+            transactionStatusLabel.setText("Please fill all fields.");
             return;
         }
 
         try {
-            int id = Integer.parseInt(idText);
             double amount = Double.parseDouble(amountText);
+            if (amount <= 0) {
+                transactionStatusLabel.setText("Amount must be greater than zero.");
+                return;
+            }
 
-
-
-            CurrencyExchange exchange = new CurrencyExchange(name, id, from, to, amount);
-
-
-            errorMessageLabal.setText("Transaction processed for " + name + ". Amount: " + amount);
-
+            // Simulate processing
+            transactionStatusLabel.setText("Transaction completed. Receipt issued.");
         } catch (NumberFormatException e) {
-            errorMessageLabal.setText("Invalid ID or amount format.");
+            transactionStatusLabel.setText("Invalid amount.");
         }
     }
 
-
-    @javafx.fxml.FXML
-    public void getRatesButtonOnAction(ActionEvent actionEvent) {
-        String from = fromCurrencyBoxComboBox.getValue();
-        String to = toCurrencyBoxComboBox.getValue();
-
-        if (from != null && to != null) {
-            double rate = getRate(from, to);
-            errorMessageLabal.setText("Exchange rate from " + from + " to " + to + " is: " + rate);
-        } else {
-            errorMessageLabal.setText("Select both source and target currencies.");
-        }
+    private double getDummyRate(String source, String target) {
+        // Dummy rates between currencies
+        if (source.equals("USD") && target.equals("BDT")) return 110.5;
+        if (source.equals("BDT") && target.equals("USD")) return 0.0091;
+        if (source.equals("EUR") && target.equals("BDT")) return 117.3;
+        if (source.equals("BDT") && target.equals("EUR")) return 0.0085;
+        if (source.equals("USD") && target.equals("EUR")) return 0.93;
+        if (source.equals("EUR") && target.equals("USD")) return 1.07;
+        return 1.0;
     }
 }

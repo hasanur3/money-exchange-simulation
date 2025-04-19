@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="704.0" prefWidth="667.0" style="-fx-background-color: violet;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Israt_jahan_liya.Controller.p_InvestigateNonComplianceController">
    <children>
       <Label layoutX="105.0" layoutY="30.0" style="-fx-background-color: firebrick;" text="Investigation of Repeated Non-Compliance">

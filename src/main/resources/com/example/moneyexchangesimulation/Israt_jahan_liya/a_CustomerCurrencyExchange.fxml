@@ -8,35 +8,65 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="645.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Israt_jahan_liya.Controller.a_CustomerCurrencyExchangeController">
+<AnchorPane prefHeight="617.0" prefWidth="711.0" style="-fx-background-color: slategray;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Israt_jahan_liya.Controller.a_CustomerCurrencyExchangeController">
    <children>
-      <Label layoutX="53.0" layoutY="102.0" text="Customer Name" />
-      <Label layoutX="53.0" layoutY="151.0" text="Passport / ID" />
-      <Label layoutX="362.0" layoutY="276.0" text="To Currency" />
-      <Label layoutX="58.0" layoutY="231.0" text="Amount" />
-      <Label layoutX="57.0" layoutY="276.0" text=" From Currency" />
-      <Label layoutX="327.0" layoutY="426.0" text="Rate Info" textFill="#287a8f">
+      <Label layoutX="255.0" layoutY="29.0" style="-fx-background-color: gray;" text="Currency Exchange">
          <font>
-            <Font size="16.0" />
+            <Font size="24.0" />
          </font>
       </Label>
-      <Label layoutX="253.0" layoutY="25.0" prefHeight="37.0" prefWidth="161.0" text="Currency Exchange" textFill="#42818a">
+      <Label fx:id="exchangeRateLabel" layoutX="317.0" layoutY="408.0" prefHeight="27.0" prefWidth="219.0" style="-fx-background-color: gray;">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="customerNameFieldTextField" layoutX="169.0" layoutY="98.0" />
-      <TextField fx:id="amountFieldTextField" layoutX="169.0" layoutY="227.0" />
-      <TextField fx:id="idFieldTextField" layoutX="169.0" layoutY="147.0" />
-      <Button layoutX="308.0" layoutY="333.0" mnemonicParsing="false" onAction="#getRatesButtonOnAction" text="getRatesButton" />
-      <Button layoutX="308.0" layoutY="508.0" mnemonicParsing="false" onAction="#confirmTransactionButtonOnAction" text="confirmTransactionButton" />
-      <Button layoutX="122.0" layoutY="508.0" mnemonicParsing="false" onAction="#validateLimitButtonOnAction" text="validateLimitButton" />
-      <Button layoutX="514.0" layoutY="508.0" mnemonicParsing="false" onAction="#processExchangeButtonOnAction" text="processExchangeButton" />
-      <Button layoutX="351.0" layoutY="119.0" mnemonicParsing="false" onAction="#verifyButtonOnAction" text="verifyButton" />
-      <Separator layoutX="31.0" layoutY="198.0" prefHeight="0.0" prefWidth="592.0" />
-      <ComboBox fx:id="fromCurrencyBoxComboBox" layoutX="169.0" layoutY="272.0" prefWidth="150.0" />
-      <ComboBox fx:id="toCurrencyBoxComboBox" layoutX="465.0" layoutY="272.0" prefWidth="150.0" />
-      <Separator layoutX="38.0" layoutY="405.0" prefHeight="3.0" prefWidth="592.0" />
-      <Label fx:id="errorMessageLabal" layoutX="486.0" layoutY="123.0" text="error message" />
+      <Label layoutX="101.0" layoutY="102.0" prefHeight="27.0" prefWidth="103.0" style="-fx-background-color: gray;" text="Customer ID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="161.0" style="-fx-background-color: gray;" text="Amount">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="282.0" style="-fx-background-color: gray;" text="Target Currency">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="222.0" style="-fx-background-color: gray;" text="Source Currency">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="transactionStatusLabel" layoutX="317.0" layoutY="480.0" prefHeight="27.0" prefWidth="219.0" style="-fx-background-color: gray;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="customerIDField" layoutX="294.0" layoutY="103.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="amountField" layoutX="296.0" layoutY="160.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="sourceCurrencyBox" layoutX="295.0" layoutY="218.0" prefHeight="35.0" prefWidth="173.0" />
+      <ComboBox fx:id="targetCurrencyBox" layoutX="296.0" layoutY="278.0" prefHeight="35.0" prefWidth="173.0" />
+      <Button layoutX="101.0" layoutY="406.0" mnemonicParsing="false" onAction="#onFetchExchangeRate" text="Fetch Exchange Rate">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="101.0" layoutY="478.0" mnemonicParsing="false" onAction="#onProcessTransaction" text="Process Transaction">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Separator layoutX="34.0" layoutY="364.0" prefHeight="0.0" prefWidth="652.0" />
    </children>
 </AnchorPane>
