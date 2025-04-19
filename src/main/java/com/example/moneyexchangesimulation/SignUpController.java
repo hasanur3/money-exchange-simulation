@@ -30,7 +30,7 @@ public class SignUpController
                 "System Manager",
                 "Student",
                 "Business Owner",
-                "Bank Teller ",
+                "Bank Teller",
                 "Compliance Officer",
                 "Admin",
                 "Audit");

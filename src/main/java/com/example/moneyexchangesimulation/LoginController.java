@@ -32,7 +32,7 @@ public class LoginController {
                 "System Manager",
                 "Student",
                 "Business Owner",
-                "Bank Teller ",
+                "Bank Teller",
                 "Compliance Officer",
                 "Admin",
                 "Audit");
@@ -82,9 +82,9 @@ public class LoginController {
         } else if (role.equals("System Manager")) {
             fxmlFile = "/com/example/moneyexchangesimulation/Hasan/systemManagerDashboard.fxml";
         } else if (role.equals("Student")) {
-            fxmlFile = "/com/example/moneyexchangesimulation/Hasan/StudentDashboard.fxml";
+            fxmlFile = "/com/example/moneyexchangesimulation/rashmi/StudentDashboard.fxml";
         } else if (role.equals("Business Owner")) {
-            fxmlFile = "/com/example/moneyexchangesimulation/Hasan/BusinessOwnerDashboard.fxml";
+            fxmlFile = "/com/example/moneyexchangesimulation/rashmi/BusinessOwnerDashboard.fxml";
         } else if (role.equals("Bank Teller")) {
             fxmlFile = "/com/example/moneyexchangesimulation/Israt_jahan_liya/e_ProcessRefunds.fxml";
         } else if (role.equals("Compliance Officer")) {
@@ -96,7 +96,8 @@ public class LoginController {
         }
 
         if (fxmlFile != null) {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFile));
+            FXMLLoader loader = new FXMLLoader(LoginController.class.getResource(fxmlFile));
+            //FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlFile));
             Parent root = loader.load();
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
