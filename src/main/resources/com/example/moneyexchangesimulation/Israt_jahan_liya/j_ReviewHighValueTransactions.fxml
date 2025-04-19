@@ -1,14 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.moneyexchangesimulation.Israt_jahan_liya.Controller.j_ReviewHighValueTransactionsController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="615.0" prefWidth="708.0" style="-fx-background-color: lemonchiffon;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Israt_jahan_liya.Controller.j_ReviewHighValueTransactionsController">
+   <children>
+      <Label layoutX="221.0" layoutY="20.0" style="-fx-background-color: khaki;" text="High-Value Transaction Review">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="281.0" layoutY="431.0" style="-fx-background-color: khaki;" text="Review Status">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="reviewStatusLabel" layoutX="219.0" layoutY="496.0" prefHeight="27.0" prefWidth="268.0" style="-fx-background-color: khaki;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="263.0" style="-fx-background-color: khaki;" text="Customer History">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="106.0" style="-fx-background-color: khaki;" text="Transaction ID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="186.0" style="-fx-background-color: khaki;" text="Transaction Amount">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="customerHistoryLabel" layoutX="331.0" layoutY="263.0" prefHeight="27.0" prefWidth="173.0" style="-fx-background-color: khaki;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="transactionIdField" layoutX="328.0" layoutY="107.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="transactionAmountField" layoutX="328.0" layoutY="185.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="177.0" layoutY="345.0" mnemonicParsing="false" onAction="#verifyComplianceButton" text="Verify Compliance" textFill="#edcb00">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="401.0" layoutY="345.0" mnemonicParsing="false" onAction="#submitReviewButton" text="Submit Review" textFill="#ffd100">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Separator layoutX="12.0" layoutY="413.0" prefHeight="0.0" prefWidth="688.0" />
+   </children>
 </AnchorPane>
