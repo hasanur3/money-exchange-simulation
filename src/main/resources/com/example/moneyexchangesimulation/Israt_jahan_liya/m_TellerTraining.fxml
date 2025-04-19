@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="553.0" prefWidth="647.0" style="-fx-background-color: plum;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Israt_jahan_liya.Controller.m_TellerTrainingController">
+   <children>
+      <Label layoutX="162.0" layoutY="31.0" prefHeight="35.0" prefWidth="356.0" style="-fx-background-color: orchid;" text=" Teller Training &amp; AML Education">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="150.0" layoutY="126.0" style="-fx-background-color: orchid;" text="Teller Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="150.0" layoutY="197.0" style="-fx-background-color: orchid;" text="Module Selected">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="410.0" style="-fx-background-color: orchid;" text="Certification Status">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="486.0" style="-fx-background-color: orchid;" text="Guidance Note">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tellerNameField" layoutX="369.0" layoutY="127.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="moduleNameField" layoutX="369.0" layoutY="198.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="266.0" layoutY="284.0" mnemonicParsing="false" onAction="#submitTrainingButton" style="-fx-background-color: hotpink;" text="Submit Training">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Separator layoutX="7.0" layoutY="368.0" prefHeight="3.0" prefWidth="634.0" />
+      <Label fx:id="guidanceNoteLabel" layoutX="340.0" layoutY="491.0" prefHeight="27.0" prefWidth="233.0" style="-fx-background-color: orchid;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="certificationStatusLabel" layoutX="340.0" layoutY="415.0" prefHeight="27.0" prefWidth="233.0" style="-fx-background-color: orchid;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
