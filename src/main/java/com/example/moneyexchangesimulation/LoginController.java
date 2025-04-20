@@ -86,9 +86,9 @@ public class LoginController {
         } else if (role.equals("Business Owner")) {
             fxmlFile = "/com/example/moneyexchangesimulation/rashmi/BusinessOwnerDashboard.fxml";
         } else if (role.equals("Bank Teller")) {
-            fxmlFile = "/com/example/moneyexchangesimulation/Israt_jahan_liya/e_ProcessRefunds.fxml";
+            fxmlFile = "/com/example/moneyexchangesimulation/Israt_jahan_liya/a_CustomerCurrencyExchange.fxml";
         } else if (role.equals("Compliance Officer")) {
-            fxmlFile = "  ";
+            fxmlFile = "/com/example/moneyexchangesimulation/Israt_jahan_liya/i_MonitorFraud.fxml;";
         } else if (role.equals("Admin")) {
             fxmlFile = "  ";
         } else if (role.equals("Audit")) {
