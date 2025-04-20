@@ -51,17 +51,17 @@ public class CashierGoal3Controller
     @javafx.fxml.FXML
     public void refundButton(ActionEvent actionEvent) {
         if(!transactionFound){
-            validationLabel.setText("❌ Transaction not found or invalid.");
+            validationLabel.setText("Transaction not found or invalid.");
             confirmationLabel.setText("");
             return;
         }
         boolean eligible = currentTxnId.endsWith("5");
 
         if (eligible) {
-            confirmationLabel.setText("✅ Refund processed successfully for " + currentTxnId);
+            confirmationLabel.setText("Refund processed successfully for " + currentTxnId);
             validationLabel.setText("");
         } else {
-            validationLabel.setText("❌ Refund not eligible. Time window expired.");
+            validationLabel.setText("Refund not eligible. Time window expired.");
             confirmationLabel.setText("");
         }
     }
@@ -69,17 +69,17 @@ public class CashierGoal3Controller
     @javafx.fxml.FXML
     public void correctButton(ActionEvent actionEvent) {
         if (!transactionFound) {
-            validationLabel.setText("❌ Transaction not found or invalid.");
+            validationLabel.setText("Transaction not found or invalid.");
             confirmationLabel.setText("");
             return;
         }
 
-        confirmationLabel.setText("✅ Correction option selected. Please proceed to edit details manually.");
+        confirmationLabel.setText("Correction option selected. Please proceed to edit details manually.");
         validationLabel.setText("");
     }
 
     @javafx.fxml.FXML
     public void goToDashboard(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("cashier_dashboard");
+        SceneSwitcher.switchTo("Hasan/cashier_dashboard");
     }
 }

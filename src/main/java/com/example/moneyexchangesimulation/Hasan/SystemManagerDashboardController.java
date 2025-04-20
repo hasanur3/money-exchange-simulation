@@ -17,43 +17,43 @@ public class SystemManagerDashboardController
 
     @javafx.fxml.FXML
     public void userManagement(ActionEvent actionEvent)throws IOException {
-        SceneSwitcher.switchTo("systemManagerGoal2");
+        SceneSwitcher.switchTo("Hasan/systemManagerGoal2");
     }
 
 
     @javafx.fxml.FXML
     public void performanceMetrics(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("systemManagerGoal7");
+        SceneSwitcher.switchTo("Hasan/systemManagerGoal7");
     }
 
     @javafx.fxml.FXML
     public void securitySettings(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("systemManagerGoal6");
+        SceneSwitcher.switchTo("Hasan/systemManagerGoal6");
     }
 
     @javafx.fxml.FXML
     public void viewLogs(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("systemManagerGoal4");
+        SceneSwitcher.switchTo("Hasan/systemManagerGoal4");
     }
 
     @javafx.fxml.FXML
     public void systemStatus(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("systemManagerGoal1");
+        SceneSwitcher.switchTo("Hasan/systemManagerGoal1");
     }
 
     @javafx.fxml.FXML
     public void systemUpdates(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("systemManagerGoal5");
+        SceneSwitcher.switchTo("Hasan/systemManagerGoal5");
     }
 
     @javafx.fxml.FXML
     public void backUpData(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("systemManagerGoal3");
+        SceneSwitcher.switchTo("Hasan/systemManagerGoal3");
     }
 
     @javafx.fxml.FXML
     public void restoreBackup(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("systemManagerGoal8");
+        SceneSwitcher.switchTo("Hasan/systemManagerGoal8");
     }
 
     @javafx.fxml.FXML

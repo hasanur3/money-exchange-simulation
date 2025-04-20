@@ -34,14 +34,14 @@ public class SystemManagerGoal6Controller
     public void validateOTP(ActionEvent actionEvent) {
         String enteredOtp =otpField.getText();
         if (enteredOtp.equals(generatedOtp)) {
-            statusLabel.setText("✅ 2FA enabled successfully.");
+            statusLabel.setText("2FA enabled successfully.");
         } else {
-            statusLabel.setText("❌ Incorrect OTP. Please try again.");
+            statusLabel.setText("Incorrect OTP. Please try again.");
         }
     }
 
     @javafx.fxml.FXML
     public void goToDashboard(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("systemManagerDashboard");
+        SceneSwitcher.switchTo("Hasan/systemManagerDashboard");
     }
 }

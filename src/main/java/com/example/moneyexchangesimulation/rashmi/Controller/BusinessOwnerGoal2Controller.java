@@ -1,13 +1,18 @@
 package com.example.moneyexchangesimulation.rashmi.Controller;
 
 import com.example.moneyexchangesimulation.rashmi.ModelClass.BusinessLoan;
-import com.example.moneyexchangesimulation.rashmi.ModelClass.SceneSwitcher;
+import com.example.moneyexchangesimulation.Hasan.SceneSwitcher;
 import com.example.moneyexchangesimulation.rashmi.ModelClass.Transaction;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.UUID;
@@ -97,11 +102,14 @@ public class BusinessOwnerGoal2Controller
 
     @javafx.fxml.FXML
     public void logOut(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("Login");
+        Parent root = FXMLLoader.load(getClass().getResource("/com/example/moneyexchangesimulation/Login.fxml"));
+        Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(root));
+        stage.show();
     }
 
     @javafx.fxml.FXML
     public void dashboard(ActionEvent actionEvent)throws IOException {
-        SceneSwitcher.switchTo("BusinessOwnerDashboard");
+        SceneSwitcher.switchTo("rashmi/BusinessOwnerDashboard");
     }
 }

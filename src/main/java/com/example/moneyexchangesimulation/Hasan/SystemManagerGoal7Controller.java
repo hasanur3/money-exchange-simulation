@@ -39,6 +39,6 @@ public class SystemManagerGoal7Controller
 
     @javafx.fxml.FXML
     public void goToDashboard(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("systemManagerDashboard");
+        SceneSwitcher.switchTo("Hasan/systemManagerDashboard");
     }
 }

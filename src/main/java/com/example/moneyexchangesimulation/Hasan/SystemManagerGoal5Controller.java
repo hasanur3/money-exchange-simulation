@@ -21,22 +21,22 @@ public class SystemManagerGoal5Controller
     @javafx.fxml.FXML
     public void checkForUpdates(ActionEvent actionEvent) {
         updateAvailable = true;
-        updatestatusLabel.setText("✅ Update available: Version 2.1.0");
+        updatestatusLabel.setText("Update available: Version 2.1.0");
         installStatusLabel.setText("");
     }
 
     @javafx.fxml.FXML
     public void installUpdate(ActionEvent actionEvent) {
         if (updateAvailable) {
-            installStatusLabel.setText("✅ System Updated Successfully!");
+            installStatusLabel.setText("System Updated Successfully!");
             updateAvailable = false;
         } else {
-            installStatusLabel.setText("ℹ️ No update available to install.");
+            installStatusLabel.setText("No update available to install.");
         }
     }
 
     @javafx.fxml.FXML
     public void goToDashboard(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("systemManagerDashboard");
+        SceneSwitcher.switchTo("Hasan/systemManagerDashboard");
     }
 }

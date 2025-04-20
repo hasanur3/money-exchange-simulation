@@ -51,14 +51,14 @@ public class CashierGoal7Controller
     @javafx.fxml.FXML
     public void processExchange(ActionEvent actionEvent) {
         if (isApproved) {
-            finalStatusLabel.setText("✅ Transaction Approved. Proceeding...");
+            finalStatusLabel.setText("Transaction Approved. Proceeding...");
         } else {
-            finalStatusLabel.setText("❌ Transaction Denied or Not Approved Yet.");
+            finalStatusLabel.setText("Transaction Denied or Not Approved Yet.");
         }
     }
 
     @javafx.fxml.FXML
     public void goToDashboard(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("cashier_dashboard");
+        SceneSwitcher.switchTo("Hasan/cashier_dashboard");
     }
 }

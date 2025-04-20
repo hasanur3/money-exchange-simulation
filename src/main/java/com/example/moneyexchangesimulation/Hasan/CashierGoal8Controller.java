@@ -33,26 +33,26 @@ public class CashierGoal8Controller
                 """.formatted(LocalDateTime.now().withNano(0));
 
         reportArea.setText(generatedReport);
-        confirmationLabel.setText("✅ Report Generated");
+        confirmationLabel.setText("Report Generated");
     }
 
     @javafx.fxml.FXML
     public void exportLog(ActionEvent actionEvent) {
         if (generatedReport.isEmpty()) {
-            confirmationLabel.setText("⚠️ Please generate report first.");
+            confirmationLabel.setText("Please generate report first.");
             return;
         }
 
         try (FileWriter writer = new FileWriter("EndOfDayReport.txt")) {
             writer.write(generatedReport);
-            confirmationLabel.setText("📁 End-of-Day Report Saved!");
+            confirmationLabel.setText("End-of-Day Report Saved!");
         } catch (IOException e) {
-            confirmationLabel.setText("❌ Failed to save report.");
+            confirmationLabel.setText("Failed to save report.");
         }
     }
 
     @javafx.fxml.FXML
     public void goToDashboard(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("cashier_dashboard");
+        SceneSwitcher.switchTo("Hasan/cashier_dashboard");
     }
 }

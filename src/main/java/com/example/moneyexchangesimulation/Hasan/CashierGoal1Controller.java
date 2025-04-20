@@ -107,6 +107,6 @@ public class CashierGoal1Controller
 
     @javafx.fxml.FXML
     public void goToDashboard(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("cashier_dashboard");
+        SceneSwitcher.switchTo("Hasan/cashier_dashboard");
     }
 }

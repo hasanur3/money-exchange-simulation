@@ -38,7 +38,7 @@ public class CashierGoal5Controller
 
     @javafx.fxml.FXML
     public void printReceipt(ActionEvent actionEvent) {
-        confirmationLabel.setText("🖨️ Receipt printed successfully!");
+        confirmationLabel.setText("Receipt printed successfully!");
     }
 
     @javafx.fxml.FXML
@@ -48,6 +48,6 @@ public class CashierGoal5Controller
 
     @javafx.fxml.FXML
     public void goToDashboard(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("cashier_dashboard");
+        SceneSwitcher.switchTo("Hasan/cashier_dashboard");
     }
 }

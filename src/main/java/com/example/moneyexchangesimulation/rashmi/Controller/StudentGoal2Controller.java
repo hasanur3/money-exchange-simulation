@@ -1,6 +1,6 @@
 package com.example.moneyexchangesimulation.rashmi.Controller;
 
-import com.example.moneyexchangesimulation.rashmi.ModelClass.SceneSwitcher;
+import com.example.moneyexchangesimulation.Hasan.SceneSwitcher;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -80,6 +80,6 @@ public class StudentGoal2Controller
 
     @javafx.fxml.FXML
     public void dashboard(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("StudentDashboard");
+        SceneSwitcher.switchTo("rashmi/StudentDashboard");
     }
 }

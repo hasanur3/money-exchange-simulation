@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="500.0" prefWidth="737.0" style="-fx-background-color: #DDEB9D;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Hasan.CashierGoal2Controller">
    <children>
       <Label alignment="CENTER" layoutX="218.0" layoutY="37.0" prefHeight="44.0" prefWidth="301.0" style="-fx-background-color: #143D60;" text="Check Verification ID" textFill="WHITE">
@@ -29,7 +28,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Label fx:id="actionRequiredLabel" layoutX="223.0" layoutY="342.0" prefHeight="88.0" prefWidth="290.0">
+      <Label fx:id="actionRequiredLabel" layoutX="223.0" layoutY="342.0" prefHeight="88.0" prefWidth="494.0">
          <font>
             <Font size="18.0" />
          </font>

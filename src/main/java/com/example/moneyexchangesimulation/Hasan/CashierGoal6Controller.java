@@ -59,11 +59,11 @@ public class CashierGoal6Controller {
 
         @javafx.fxml.FXML
         public void sendViaEmail(ActionEvent actionEvent) {
-            confirmationLabel.setText("📧 Exchange rates sent via email.");
+            confirmationLabel.setText("Exchange rates sent via email.");
         }
 
     @javafx.fxml.FXML
     public void goToDashboard(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("cashier_dashboard");
+        SceneSwitcher.switchTo("Hasan/cashier_dashboard");
     }
 }

@@ -15,47 +15,47 @@ public class BusinessOwnerDashboardController
 
     @javafx.fxml.FXML
     public void logoutButton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("BusinessOwnerGoal1");
+        SceneSwitcher.switchTo("rashmi/BusinessOwnerGoal1");
     }
 
     @javafx.fxml.FXML
     public void genBusinessFinReports(ActionEvent actionEvent) throws IOException{
-        SceneSwitcher.switchTo("BusinessOwnerGoal5");
+        SceneSwitcher.switchTo("rashmi/BusinessOwnerGoal5");
     }
 
     @javafx.fxml.FXML
     public void manageBusinessExpenses(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("BusinessOwnerGoal6");
+        SceneSwitcher.switchTo("rashmi/BusinessOwnerGoal6");
     }
 
     @javafx.fxml.FXML
     public void monitorBusinessExchange(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("BusinessOwnerGoal1");
+        SceneSwitcher.switchTo("rashmi/BusinessOwnerGoal1");
     }
 
     @javafx.fxml.FXML
     public void accessBusinessLoanOffer(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("BusinessOwnerGoal2");
+        SceneSwitcher.switchTo("rashmi/BusinessOwnerGoal2");
     }
 
     @javafx.fxml.FXML
     public void manageSupplierPayments(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("BusinessOwnerGoal8");
+        SceneSwitcher.switchTo("rashmi/BusinessOwnerGoal8");
     }
 
     @javafx.fxml.FXML
     public void handleEmployeePayroll(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("BusinessOwnerGoal7");
+        SceneSwitcher.switchTo("rashmi/BusinessOwnerGoal7");
     }
 
     @javafx.fxml.FXML
     public void integrateBusinessBankAcc(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("BusinessOwnerGoal3");
+        SceneSwitcher.switchTo("rashmi/BusinessOwnerGoal3");
     }
 
     @javafx.fxml.FXML
     public void automateBulkTrans(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("BusinessOwnerGoal4");
+        SceneSwitcher.switchTo("rashmi/BusinessOwnerGoal4");
     }
 
 }

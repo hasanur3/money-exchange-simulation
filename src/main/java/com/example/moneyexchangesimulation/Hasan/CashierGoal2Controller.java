@@ -29,15 +29,15 @@ public class CashierGoal2Controller
         }
         boolean isVerified=customerId.startsWith("v");
         if (isVerified) {
-            verificationStatusLabel.setText("Status: Verified ✅");
+            verificationStatusLabel.setText("Status: Verified");
             actionRequiredLabel.setText("Customer is eligible for transactions.");
         } else {
-            verificationStatusLabel.setText("Status: Unverified ❌");
+            verificationStatusLabel.setText("Status: Unverified");
             actionRequiredLabel.setText("Please request additional documents or deny the transaction.");
         }
     }
     @javafx.fxml.FXML
        public void goToDashboard(ActionEvent actionEvent) throws IOException {
-       SceneSwitcher.switchTo("cashier_dashboard");
+       SceneSwitcher.switchTo("Hasan/cashier_dashboard");
     }
 }
