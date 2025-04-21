@@ -50,4 +50,8 @@ public class k_FlagSuspiciousActivitiesController
         currentReport = new AuditReport(start, end, flagged, "");
         flaggedLabel.setText(flagged ? "Irregularities Found" : "All Transactions Normal");
     }
+
+    @javafx.fxml.FXML
+    public void GoToDashBoardButton(ActionEvent actionEvent) {
+    }
 }

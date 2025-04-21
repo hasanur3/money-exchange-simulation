@@ -53,4 +53,8 @@ public class n_HighRiskTransactionController
         alertLabel.setText(alert);
         decisionStatusLabel.setText(decision);
     }
+
+    @javafx.fxml.FXML
+    public void GoToDashBoardButton(ActionEvent actionEvent) {
+    }
 }

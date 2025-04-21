@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="534.0" prefWidth="631.0" style="-fx-background-color: slategray;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Israt_jahan_liya.Controller.g_GenerateReportsController">
+<AnchorPane prefHeight="581.0" prefWidth="645.0" style="-fx-background-color: slategray;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Israt_jahan_liya.Controller.g_GenerateReportsController">
    <children>
       <Label layoutX="174.0" layoutY="27.0" style="-fx-background-color: lightgray;" text="Generate Financial Reports">
          <font>
@@ -45,5 +45,6 @@
       <ComboBox fx:id="reportTypeComboBox" layoutX="186.0" layoutY="274.0" prefHeight="35.0" prefWidth="218.0" />
       <Button layoutX="458.0" layoutY="200.0" mnemonicParsing="false" onAction="#generateReportButton" prefHeight="35.0" prefWidth="146.0" text="generateReportButton " />
       <Separator layoutX="14.0" layoutY="341.0" prefHeight="5.0" prefWidth="605.0" />
+      <Button layoutX="458.0" layoutY="508.0" mnemonicParsing="false" onAction="#GoToDashBoardButton" prefHeight="35.0" prefWidth="146.0" text="Go To DashBoard" />
    </children>
 </AnchorPane>

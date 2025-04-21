@@ -84,4 +84,7 @@ public class a_CustomerCurrencyExchangeController {
         return 1.0;
     }
 
+    @javafx.fxml.FXML
+    public void GoToDashBoardButton(ActionEvent actionEvent) {
+    }
 }

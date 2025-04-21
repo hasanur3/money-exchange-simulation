@@ -65,4 +65,8 @@ public class f_ExchangeRateInquiryController
             default -> "No trend data.";
         };
     }
+
+    @javafx.fxml.FXML
+    public void GoToDashBoardButton(ActionEvent actionEvent) {
+    }
 }

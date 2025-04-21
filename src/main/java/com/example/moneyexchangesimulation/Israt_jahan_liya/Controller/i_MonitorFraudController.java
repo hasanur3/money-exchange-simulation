@@ -77,4 +77,8 @@ public class i_MonitorFraudController
             riskLevelLabel.setText("No Fraud Pattern Detected");
         }
     }
+
+    @javafx.fxml.FXML
+    public void GoToDashBoardButton(ActionEvent actionEvent) {
+    }
 }

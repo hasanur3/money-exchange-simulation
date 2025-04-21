@@ -47,4 +47,8 @@ public class m_TellerTrainingController
     public void setTraining(TellerTraining training) {
         this.training = training;
     }
+
+    @javafx.fxml.FXML
+    public void GoToDashBoardButton(ActionEvent actionEvent) {
+    }
 }

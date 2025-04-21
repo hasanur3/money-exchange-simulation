@@ -19,23 +19,23 @@ public class q_BankTellerDashboardController
 
     @javafx.fxml.FXML
     public void goToManageCashReserves(ActionEvent actionEvent) throws IOException{
-        SceneSwitcher.switchTo("Israt_jahan_liya/c_ManageCashReserves.fxml");
+        SceneSwitcher.switchTo("Israt_jahan_liya/c_ManageCashReserves");
     }
 
     @javafx.fxml.FXML
     public void goToGenerateReports(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("Israt_jahan_liya/g_GenerateReports.fxml");
+        SceneSwitcher.switchTo("Israt_jahan_liya/g_GenerateReports");
     }
 
 
     @javafx.fxml.FXML
     public void goToExchangeRateInquiry(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("Israt_jahan_liya/f_ExchangeRateInquiry.fxml");
+        SceneSwitcher.switchTo("Israt_jahan_liya/f_ExchangeRateInquiry");
     }
 
     @FXML
     public void logOutButton(ActionEvent actionEvent) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/com/example/moneyexchangesimulation/Login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/com/example/moneyexchangesimulation/Login"));
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
         stage.show();
@@ -43,27 +43,27 @@ public class q_BankTellerDashboardController
 
     @javafx.fxml.FXML
     public void goToCurrencyExchange(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("Israt_jahan_liya/a_CustomerCurrencyExchange.fxml");
+        SceneSwitcher.switchTo("Israt_jahan_liya/a_CustomerCurrencyExchange");
     }
 
     @javafx.fxml.FXML
     public void goToLargeTransactions(ActionEvent actionEvent) throws IOException{
-        SceneSwitcher.switchTo("Israt_jahan_liya/d_HandleLargeTransactions.fxml");
+        SceneSwitcher.switchTo("Israt_jahan_liya/d_HandleLargeTransactions");
     }
 
     @javafx.fxml.FXML
     public void goToVerifyIdentity(ActionEvent actionEvent) throws IOException{
-        SceneSwitcher.switchTo("Israt_jahan_liya/b_VerifyCustomerIdentity.fxml");
+        SceneSwitcher.switchTo("Israt_jahan_liya/b_VerifyCustomerIdentity");
     }
 
     @javafx.fxml.FXML
     public void goToProcessRefunds(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("Israt_jahan_liya/e_ProcessRefunds.fxml");
+        SceneSwitcher.switchTo("Israt_jahan_liya/e_ProcessRefunds");
     }
 
 
     @javafx.fxml.FXML
     public void goToReportSuspiciousActivity(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchTo("Israt_jahan_liya/h_ReportSuspiciousActivity.fxml");
+        SceneSwitcher.switchTo("Israt_jahan_liya/h_ReportSuspiciousActivity");
     }
 }

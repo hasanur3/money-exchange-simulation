@@ -45,4 +45,8 @@ public class b_VerifyCustomerIdentityController
             ValidationResultLabal.setText("Invalid or suspicious ID.");
         }
     }
+
+    @javafx.fxml.FXML
+    public void GoToDashBoardButton(ActionEvent actionEvent) {
+    }
 }

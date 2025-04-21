@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Israt_jahan_liya.Controller.l_AuditTransactionsController">
    <children>
       <AnchorPane layoutX="-9.0" layoutY="-7.0" prefHeight="571.0" prefWidth="725.0" style="-fx-background-color: silver;">
@@ -57,6 +56,11 @@
                </font>
             </TextField>
             <Button layoutX="313.0" layoutY="423.0" mnemonicParsing="false" onAction="#submitAuditButton" style="-fx-background-color: steelblue;" text="Submit Audit">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="82.0" layoutY="488.0" mnemonicParsing="false" onAction="#GoToDashBoardButton" style="-fx-background-color: steelblue;" text="Go To DashBoard">
                <font>
                   <Font size="14.0" />
                </font>

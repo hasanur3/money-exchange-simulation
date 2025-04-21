@@ -31,5 +31,6 @@
          </font>
       </Label>
       <Line endX="112.0" layoutX="344.0" layoutY="64.0" startX="-100.0" stroke="#001bed" />
+      <Button layoutX="265.0" layoutY="559.0" mnemonicParsing="false" onAction="#GoToDashBoardButton" text="Go To DashBoard" />
    </children>
 </AnchorPane>

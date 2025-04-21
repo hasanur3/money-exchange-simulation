@@ -39,4 +39,8 @@ public class g_GenerateReportsController
             statusLabel.setText("Please select start date, end date, and report type.");
         }
     }
+
+    @javafx.fxml.FXML
+    public void GoToDashBoardButton(ActionEvent actionEvent) {
+    }
 }

@@ -57,4 +57,8 @@ public class h_ReportSuspiciousActivityController
             accountStatusLabel.setText("No further action required.");
         }
     }
+
+    @javafx.fxml.FXML
+    public void GoToDashBoardButton(ActionEvent actionEvent) {
+    }
 }

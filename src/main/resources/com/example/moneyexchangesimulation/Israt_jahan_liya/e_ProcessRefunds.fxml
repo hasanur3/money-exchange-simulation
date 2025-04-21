@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="564.0" prefWidth="666.0" style="-fx-background-color: khaki;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Israt_jahan_liya.Controller.e_ProcessRefundsController">
    <children>
       <Label layoutX="276.0" layoutY="28.0" prefHeight="31.0" prefWidth="172.0" style="-fx-background-color: lemonchiffon;" text="  Refund Request">
@@ -47,5 +46,10 @@
          </font>
       </Button>
       <Separator layoutX="42.0" layoutY="314.0" prefHeight="3.0" prefWidth="653.0" />
+      <Button layoutX="70.0" layoutY="479.0" mnemonicParsing="false" onAction="#GoToDashBoardButton" style="-fx-background-color: gold;" text="Go To DashBoard">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

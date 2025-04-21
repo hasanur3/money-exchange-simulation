@@ -31,4 +31,8 @@ public class o_ReviewAlertsController
             resolutionStatusLabel.setText("Please fill in all fields.");
         }
     }
+
+    @javafx.fxml.FXML
+    public void GoToDashBoardButton(ActionEvent actionEvent) {
+    }
 }

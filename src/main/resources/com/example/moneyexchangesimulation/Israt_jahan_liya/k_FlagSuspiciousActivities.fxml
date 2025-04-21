@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="561.0" prefWidth="725.0" style="-fx-background-color: peru;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Israt_jahan_liya.Controller.k_FlagSuspiciousActivitiesController">
    <children>
       <Label layoutX="296.0" layoutY="27.0" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: gold;" text="Routine Audit">
@@ -67,5 +66,10 @@
          </font>
       </Button>
       <Separator layoutX="23.0" layoutY="351.0" prefHeight="0.0" prefWidth="681.0" />
+      <Button layoutX="556.0" layoutY="447.0" mnemonicParsing="false" onAction="#GoToDashBoardButton" style="-fx-background-color: crimson;" text="Go To DashBoard">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

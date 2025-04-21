@@ -40,4 +40,8 @@ public class l_AuditTransactionsController
         flaggedLabel.setText(flagged ? "Flagged" : "Not Flagged");
         auditStatusLabel.setText(currentReport.getAuditStatus());
     }
+
+    @javafx.fxml.FXML
+    public void GoToDashBoardButton(ActionEvent actionEvent) {
+    }
 }

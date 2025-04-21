@@ -63,4 +63,7 @@ public class j_ReviewHighValueTransactionsController
         }
     }
 
+    @javafx.fxml.FXML
+    public void GoToDashBoardButton(ActionEvent actionEvent) {
+    }
 }

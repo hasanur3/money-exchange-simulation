@@ -38,4 +38,8 @@ public class e_ProcessRefundsController
             refundStatusLabel.setText("Transaction not eligible for refund.");
         }
     }
+
+    @javafx.fxml.FXML
+    public void GoToDashBoardButton(ActionEvent actionEvent) {
+    }
 }

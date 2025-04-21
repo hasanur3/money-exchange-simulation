@@ -7,8 +7,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="614.0" prefWidth="689.0" style="-fx-background-color: silver;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Israt_jahan_liya.Controller.d_HandleLargeTransactionsController">
+<AnchorPane prefHeight="687.0" prefWidth="764.0" style="-fx-background-color: silver;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Israt_jahan_liya.Controller.d_HandleLargeTransactionsController">
    <children>
       <Label layoutX="195.0" layoutY="20.0" style="-fx-background-color: white;" text="Handle High-Value Transactions">
          <font>
@@ -63,5 +62,10 @@
          </font>
       </Button>
       <Line endX="529.0" layoutX="127.0" layoutY="447.0" startX="-100.0" />
+      <Button layoutX="291.0" layoutY="611.0" mnemonicParsing="false" onAction="#GoToDashBoardButton" text="Go To DashBoard">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

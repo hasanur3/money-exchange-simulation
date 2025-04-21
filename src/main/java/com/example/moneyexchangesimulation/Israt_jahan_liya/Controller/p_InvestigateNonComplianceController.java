@@ -33,4 +33,8 @@ public class p_InvestigateNonComplianceController
             submissionStatusLabel.setText("Please fill in all fields.");
         }
     }
+
+    @javafx.fxml.FXML
+    public void GoToDashBoardButton(ActionEvent actionEvent) {
+    }
 }

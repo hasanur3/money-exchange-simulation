@@ -39,5 +39,10 @@
             <Font size="18.0" />
          </font>
       </Label>
+      <Button layoutX="76.0" layoutY="498.0" mnemonicParsing="false" onAction="#GoToDashBoardButton" text="Go To DashBoard" textFill="#f50000">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

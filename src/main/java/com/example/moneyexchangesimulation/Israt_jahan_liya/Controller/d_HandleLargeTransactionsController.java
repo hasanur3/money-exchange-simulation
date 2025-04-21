@@ -54,4 +54,8 @@ public class d_HandleLargeTransactionsController
             flagStatusLabel.setText("Invalid amount format.");
         }
     }
+
+    @javafx.fxml.FXML
+    public void GoToDashBoardButton(ActionEvent actionEvent) {
+    }
 }

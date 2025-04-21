@@ -78,4 +78,8 @@ public class c_ManageCashReservesController
     public void setCurrentStock(double currentStock) {
         this.currentStock = currentStock;
     }
+
+    @javafx.fxml.FXML
+    public void GoToDashBoardButton(ActionEvent actionEvent) {
+    }
 }
