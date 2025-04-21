@@ -1,10 +1,12 @@
 package com.example.moneyexchangesimulation.Israt_jahan_liya.Controller;
 
+import com.example.moneyexchangesimulation.Hasan.SceneSwitcher;
 import com.example.moneyexchangesimulation.Israt_jahan_liya.ModelClass.HighRiskTransaction;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+import java.io.IOException;
 import java.util.Random;
 
 public class n_HighRiskTransactionController
@@ -55,6 +57,7 @@ public class n_HighRiskTransactionController
     }
 
     @javafx.fxml.FXML
-    public void GoToDashBoardButton(ActionEvent actionEvent) {
+    public void GoToDashBoardButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("Israt_jahan_liya/q_BankTellerDashboard");
     }
 }

@@ -1,9 +1,12 @@
 package com.example.moneyexchangesimulation.Israt_jahan_liya.Controller;
 
+import com.example.moneyexchangesimulation.Hasan.SceneSwitcher;
 import com.example.moneyexchangesimulation.Israt_jahan_liya.ModelClass.TransactionMonitoring;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+
+import java.io.IOException;
 
 public class i_MonitorFraudController
 {
@@ -79,6 +82,7 @@ public class i_MonitorFraudController
     }
 
     @javafx.fxml.FXML
-    public void GoToDashBoardButton(ActionEvent actionEvent) {
+    public void GoToDashBoardButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("Israt_jahan_liya/q_BankTellerDashboard");
     }
 }

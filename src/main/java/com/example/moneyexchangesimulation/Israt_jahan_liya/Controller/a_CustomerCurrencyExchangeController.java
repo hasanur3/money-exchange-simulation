@@ -85,6 +85,7 @@ public class a_CustomerCurrencyExchangeController {
     }
 
     @javafx.fxml.FXML
-    public void GoToDashBoardButton(ActionEvent actionEvent) {
+    public void GoToDashBoardButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("Israt_jahan_liya/q_BankTellerDashboard");
     }
 }

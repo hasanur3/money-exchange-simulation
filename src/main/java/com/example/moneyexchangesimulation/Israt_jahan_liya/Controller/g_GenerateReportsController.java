@@ -1,10 +1,13 @@
 package com.example.moneyexchangesimulation.Israt_jahan_liya.Controller;
 
+import com.example.moneyexchangesimulation.Hasan.SceneSwitcher;
 import com.example.moneyexchangesimulation.Israt_jahan_liya.ModelClass.FinancialReport;
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
+
+import java.io.IOException;
 
 public class g_GenerateReportsController
 {
@@ -41,6 +44,7 @@ public class g_GenerateReportsController
     }
 
     @javafx.fxml.FXML
-    public void GoToDashBoardButton(ActionEvent actionEvent) {
+    public void GoToDashBoardButton(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchTo("Israt_jahan_liya/q_BankTellerDashboard");
     }
 }
