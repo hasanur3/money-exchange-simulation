@@ -25,9 +25,7 @@ public class UserManager {
         }
     }
 
-    public static List<User> getUsers() {
-        return new ArrayList<>(userList);
-    }
+
 
     public static User checkLogIn(String username, String password) {
         for (User user : userList) {
@@ -39,18 +37,11 @@ public class UserManager {
         return null;
     }
 
-    public static void deleteUser(User user) {
-        userList.remove(user);
-        saveUsersToFile();
-        System.out.println("User deleted: " + user.getName());
-    }
-
     public static void addUser(User user) {
         userList.add(user);
         saveUsersToFile();
         System.out.println("User added: " + user.getName());
     }
-
 
     private static void saveUsersToFile() {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("user.bin"))) {
