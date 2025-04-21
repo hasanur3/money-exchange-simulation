@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Jerome.admingoal7Controller">
+   <children>
+      <Label layoutX="251.0" layoutY="46.0" text="Track User Activity" />
+      <TextField fx:id="userIdField" layoutX="42.0" layoutY="106.0" />
+      <Button layoutX="42.0" layoutY="159.0" mnemonicParsing="false" onAction="#handleFetchActivity" text="Fetch Activity" />
+      <TextArea fx:id="activityTextArea" layoutX="224.0" layoutY="131.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
