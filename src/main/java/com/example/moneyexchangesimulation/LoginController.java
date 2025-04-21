@@ -88,7 +88,7 @@ public class LoginController {
         } else if (role.equals("Bank Teller")) {
             fxmlFile = "/com/example/moneyexchangesimulation/Israt_jahan_liya/q_BankTellerDashboard.fxml";
         } else if (role.equals("Compliance Officer")) {
-            fxmlFile = "/com/example/moneyexchangesimulation/Israt_jahan_liya/i_MonitorFraud.fxml;";
+            fxmlFile = "/com/example/moneyexchangesimulation/Israt_jahan_liya/r_compliance_officer_dashboard.fxml;";
         } else if (role.equals("Admin")) {
             fxmlFile = "  ";
         } else if (role.equals("Audit")) {

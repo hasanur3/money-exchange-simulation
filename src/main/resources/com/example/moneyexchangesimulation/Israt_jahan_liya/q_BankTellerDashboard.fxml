@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="692.0" prefWidth="714.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneyexchangesimulation.Israt_jahan_liya.Controller.q_BankTellerDashboardController">
    <children>
       <Label layoutX="278.0" layoutY="20.0" style="-fx-background-color: silver;" text="Bank Teller" textFill="#0a26ff">
@@ -14,12 +13,12 @@
             <Font size="36.0" />
          </font>
       </Label>
-      <Button layoutX="72.0" layoutY="140.0" mnemonicParsing="false" onAction="#goToCurrencyExchange" text="Currency Exchange" textFill="#df00ff">
+      <Button layoutX="72.0" layoutY="140.0" mnemonicParsing="false" onAction="#goToCurrencyExchange" prefHeight="39.0" prefWidth="206.0" text="Currency Exchange" textFill="#df00ff">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="72.0" layoutY="226.0" mnemonicParsing="false" onAction="#goToVerifyIdentity" text="Verify Identity" textFill="#df00ff">
+      <Button layoutX="72.0" layoutY="226.0" mnemonicParsing="false" onAction="#goToVerifyIdentity" prefHeight="39.0" prefWidth="206.0" text="Verify Identity" textFill="#df00ff">
          <font>
             <Font size="18.0" />
          </font>
@@ -29,22 +28,22 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="72.0" layoutY="415.0" mnemonicParsing="false" onAction="#goToLargeTransactions" text="Large Transactions" textFill="#df00ff">
+      <Button layoutX="72.0" layoutY="415.0" mnemonicParsing="false" onAction="#goToLargeTransactions" prefHeight="39.0" prefWidth="206.0" text="Large Transactions" textFill="#df00ff">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="452.0" layoutY="140.0" mnemonicParsing="false" onAction="#goToProcessRefunds" text="Process Refunds" textFill="#df00ff">
+      <Button layoutX="452.0" layoutY="140.0" mnemonicParsing="false" onAction="#goToProcessRefunds" prefHeight="39.0" prefWidth="230.0" text="Process Refunds" textFill="#df00ff">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="459.0" layoutY="226.0" mnemonicParsing="false" onAction="#goToExchangeRateInquiry" text="Exchange Rate Inquiry" textFill="#df00ff">
+      <Button layoutX="459.0" layoutY="226.0" mnemonicParsing="false" onAction="#goToExchangeRateInquiry" prefHeight="39.0" prefWidth="230.0" text="Exchange Rate Inquiry" textFill="#df00ff">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="459.0" layoutY="327.0" mnemonicParsing="false" onAction="#goToGenerateReports" text="Generate Reports" textFill="#df00ff">
+      <Button layoutX="459.0" layoutY="327.0" mnemonicParsing="false" onAction="#goToGenerateReports" prefHeight="39.0" prefWidth="230.0" text="Generate Reports" textFill="#df00ff">
          <font>
             <Font size="18.0" />
          </font>
