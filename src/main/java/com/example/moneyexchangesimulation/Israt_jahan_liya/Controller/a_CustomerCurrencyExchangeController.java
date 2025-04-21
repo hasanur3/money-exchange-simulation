@@ -1,9 +1,12 @@
 package com.example.moneyexchangesimulation.Israt_jahan_liya.Controller;
 
+import com.example.moneyexchangesimulation.Hasan.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+
+import java.io.IOException;
 
 public class a_CustomerCurrencyExchangeController {
     @javafx.fxml.FXML
@@ -80,4 +83,5 @@ public class a_CustomerCurrencyExchangeController {
         if (source.equals("EUR") && target.equals("USD")) return 1.07;
         return 1.0;
     }
+
 }
