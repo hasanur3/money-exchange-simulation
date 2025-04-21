@@ -8,4 +8,5 @@ module com.example.moneyexchangesimulation {
     exports com.example.moneyexchangesimulation;
     opens com.example.moneyexchangesimulation.rashmi.Controller to javafx.fxml;
     opens com.example.moneyexchangesimulation.Hasan to javafx.fxml;
+    opens com.example.moneyexchangesimulation.Israt_jahan_liya.Controller to javafx.fxml;
 }
