@@ -54,7 +54,7 @@ public class CashierGoal6Controller {
 
         @javafx.fxml.FXML
         public void printRates(ActionEvent actionEvent) {
-            confirmationLabel.setText("🖨️ Exchange rates printed.");
+            confirmationLabel.setText("Exchange rates printed.");
         }
 
         @javafx.fxml.FXML

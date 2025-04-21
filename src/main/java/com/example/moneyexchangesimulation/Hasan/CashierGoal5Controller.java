@@ -43,7 +43,7 @@ public class CashierGoal5Controller
 
     @javafx.fxml.FXML
     public void sendEmail(ActionEvent actionEvent) {
-        confirmationLabel.setText("📧 Receipt emailed successfully!");
+        confirmationLabel.setText("Receipt emailed successfully!");
     }
 
     @javafx.fxml.FXML

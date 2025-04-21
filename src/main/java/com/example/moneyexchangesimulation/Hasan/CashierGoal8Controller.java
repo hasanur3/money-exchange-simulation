@@ -24,12 +24,12 @@ public class CashierGoal8Controller
     @javafx.fxml.FXML
     public void generateDatlyReport(ActionEvent actionEvent) {
         generatedReport = """
-                📅 Date: %s
+                Date: %s
                 
-                ✅ Total Transactions: 42
-                🔁 Total Refunds: 3
-                🛠️  Corrections: 1
-                💰 Total Amount Exchanged: BDT 4,20,000
+                Total Transactions: 42
+                Total Refunds: 3
+                Corrections: 1
+                Total Amount Exchanged: BDT 4,20,000
                 """.formatted(LocalDateTime.now().withNano(0));
 
         reportArea.setText(generatedReport);

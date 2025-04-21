@@ -28,17 +28,17 @@ public class CashierGoal7Controller
     public void submitRequest(ActionEvent actionEvent) {
         String input = amountField.getText();
         if (input.isEmpty()) {
-            approvalLabel.setText("⚠️ Please enter an amount.");
+            approvalLabel.setText("Please enter an amount.");
             return;
         }
 
         double amount = Double.parseDouble(input);
 
         if (amount > LIMIT) {
-            approvalLabel.setText("🔐 Admin Approval Required...");
+            approvalLabel.setText("Admin Approval Required...");
             isApproved = simulateAdminApproval(amount);
         } else {
-            approvalLabel.setText("✅ Transaction within limit. No approval needed.");
+            approvalLabel.setText("Transaction within limit. No approval needed.");
             isApproved = true;
         }
     }

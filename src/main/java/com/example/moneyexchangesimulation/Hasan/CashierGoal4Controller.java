@@ -35,9 +35,9 @@ public class CashierGoal4Controller
 
     private void checkLowBalance() {
         String warning = "";
-        if (usd < 1000) warning += "⚠️ Low balance in USD\n";
-        if (eur < 1000) warning += "⚠️ Low balance in EUR\n";
-        if (gbp < 1000) warning += "⚠️ Low balance in GBP\n";
+        if (usd < 1000) warning += "Low balance in USD\n";
+        if (eur < 1000) warning += "Low balance in EUR\n";
+        if (gbp < 1000) warning += "Low balance in GBP\n";
 
         warningLabel.setText(warning);
     }

@@ -29,7 +29,7 @@ public class SystemManagerGoal7Controller
         data.getData().add(new XYChart.Data<>("Response Time", 80));
 
         performanceChart.getData().add(data);
-        statusLabel.setText("✅ Metrics fetched successfully.");
+        statusLabel.setText("Metrics fetched successfully.");
     }
 
     @javafx.fxml.FXML

@@ -26,7 +26,7 @@ public class SystemManagerGoal6Controller
     @javafx.fxml.FXML
     public void enable2FA(ActionEvent actionEvent) {
         generatedOtp = "123456";
-        otpLabel.setText("📨 OTP sent to registered email/phone: " + generatedOtp);
+        otpLabel.setText("OTP sent to registered email/phone: " + generatedOtp);
         statusLabel.setText("");
     }
 
