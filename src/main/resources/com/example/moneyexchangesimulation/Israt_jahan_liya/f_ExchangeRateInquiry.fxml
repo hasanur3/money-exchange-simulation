@@ -25,7 +25,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Label fx:id="currentRateLabel" layoutX="242.0" layoutY="328.0" prefHeight="27.0" prefWidth="212.0" style="-fx-background-color: steelblue;">
+      <Label fx:id="currentRateLabel" layoutX="242.0" layoutY="328.0" prefHeight="27.0" prefWidth="330.0" style="-fx-background-color: steelblue;">
          <font>
             <Font size="18.0" />
          </font>
@@ -40,7 +40,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Label fx:id="trendLabel" layoutX="249.0" layoutY="422.0" prefHeight="27.0" prefWidth="212.0" style="-fx-background-color: steelblue;">
+      <Label fx:id="trendLabel" layoutX="249.0" layoutY="422.0" prefHeight="27.0" prefWidth="330.0" style="-fx-background-color: steelblue;">
          <font>
             <Font size="18.0" />
          </font>

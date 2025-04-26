@@ -23,6 +23,9 @@ public class f_ExchangeRateInquiryController
     @javafx.fxml.FXML
     public void initialize() {
         currencyTypeComboBox.getItems().addAll("USD", "EUR", "BDT");
+        //retrieved the selected item from the ComboBox when the user made a selection.
+        //String selected = currencyTypeComboBox.getValue();
+        //System.out.println("selected item: " + selected);
     }
 
     @javafx.fxml.FXML
