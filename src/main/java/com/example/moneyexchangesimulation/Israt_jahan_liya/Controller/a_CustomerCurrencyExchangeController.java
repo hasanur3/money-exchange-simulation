@@ -66,7 +66,6 @@ public class a_CustomerCurrencyExchangeController {
                 return;
             }
 
-            // Simulate processing
             transactionStatusLabel.setText("Transaction completed. Receipt issued.");
         } catch (NumberFormatException e) {
             transactionStatusLabel.setText("Invalid amount.");

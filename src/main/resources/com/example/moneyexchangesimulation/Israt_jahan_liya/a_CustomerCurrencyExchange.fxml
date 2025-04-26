@@ -40,7 +40,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Label fx:id="transactionStatusLabel" layoutX="317.0" layoutY="480.0" prefHeight="27.0" prefWidth="219.0" style="-fx-background-color: gray;">
+      <Label fx:id="transactionStatusLabel" layoutX="317.0" layoutY="480.0" prefHeight="27.0" prefWidth="373.0" style="-fx-background-color: gray;">
          <font>
             <Font size="18.0" />
          </font>
